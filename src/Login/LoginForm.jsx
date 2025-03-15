@@ -25,7 +25,6 @@ const LoginForm = () => {
       >
         Login
       </Button>
-      
     </form>
   );
 };
