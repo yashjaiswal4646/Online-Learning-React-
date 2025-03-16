@@ -6,8 +6,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-stone-950 shadow-lg border-b border-fuchsia-900">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4 lg:px-12">
+    <header className="w-full border-b shadow-lg bg-stone-950 border-fuchsia-900">
+      <div className="container flex items-center justify-between px-6 py-4 mx-auto lg:px-12">
         {/* Logo */}
         <h1 className="text-3xl font-bold text-white">
           <span>Code</span>
@@ -15,51 +15,51 @@ const Navbar = () => {
         </h1>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex space-x-10 text-lg">
-          <Link to="/" className="text-white hover:text-fuchsia-500 transition">
+        <nav className="hidden space-x-10 text-lg lg:flex">
+          <Link to="/" className="text-white transition hover:text-fuchsia-500">
             Home
           </Link>
-          <Link to="/course" className="text-white hover:text-fuchsia-500 transition">
+          <Link to="/course" className="text-white transition hover:text-fuchsia-500">
             Course
           </Link>
-          <Link to="/about" className="text-white hover:text-fuchsia-500 transition">
+          <Link to="/about" className="text-white transition hover:text-fuchsia-500">
             About
           </Link>
         </nav>
 
         {/* Authentication Buttons - Hidden on Mobile */}
-        <div className="hidden lg:flex gap-4">
-          <button className="px-5 py-2 bg-fuchsia-700 rounded-full text-white hover:bg-fuchsia-600 transition">
+        <div className="hidden gap-4 lg:flex">
+          <button className="px-5 py-2 text-white transition rounded-full bg-fuchsia-700 hover:bg-fuchsia-600">
             Login
           </button>
-          <button className="px-5 py-2 bg-fuchsia-700 rounded-full text-white hover:bg-fuchsia-600 transition">
+          <button className="px-5 py-2 text-white transition rounded-full bg-fuchsia-700 hover:bg-fuchsia-600">
             SignUp
           </button>
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="lg:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
+        <button className="text-white lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="lg:hidden flex flex-col items-center gap-6 bg-stone-950 py-6">
-          <Link to="/" className="text-white hover:text-fuchsia-500 transition" onClick={() => setIsOpen(false)}>
+        <nav className="flex flex-col items-center gap-6 py-6 lg:hidden bg-stone-950">
+          <Link to="/" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link to="/course" className="text-white hover:text-fuchsia-500 transition" onClick={() => setIsOpen(false)}>
+          <Link to="/course" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
             Course
           </Link>
-          <Link to="/about" className="text-white hover:text-fuchsia-500 transition" onClick={() => setIsOpen(false)}>
+          <Link to="/about" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
             About
           </Link>
           <div className="flex flex-col gap-4 mt-4">
-            <button className="px-5 py-2 bg-fuchsia-700 rounded-full text-white hover:bg-fuchsia-600 transition">
+            <button className="px-5 py-2 text-white transition rounded-full bg-fuchsia-700 hover:bg-fuchsia-600">
               Login
             </button>
-            <button className="px-5 py-2 bg-fuchsia-700 rounded-full text-white hover:bg-fuchsia-600 transition">
+            <button className="px-5 py-2 text-white transition rounded-full bg-fuchsia-700 hover:bg-fuchsia-600">
               SignUp
             </button>
           </div>
