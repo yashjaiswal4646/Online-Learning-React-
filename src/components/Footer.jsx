@@ -3,37 +3,37 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="text-white mt-14 px-6 md:px-10 bg-black py-10">
+    <footer className="text-white mt-14 px-6 md:px-10 bg-black py-10 overflow-hidden">
       <hr className="border-fuchsia-700" />
-      <div className="flex flex-wrap justify-between items-center mt-10 w-full max-w-6xl mx-auto">
+      <div className="flex flex-wrap justify-between items-center mt-10 max-w-6xl mx-auto">
         {/* Social Media Icons (Centered on Mobile) */}
         <div className="flex gap-4 md:gap-6 justify-center md:justify-start w-full md:w-auto mb-6 md:mb-0">
           <img
             src="/images/communication1.png"
             alt="Facebook Icon"
-            className="w-8 md:w-10"
+            className="w-8 md:w-10 max-w-full"
           />
           <img
             src="/images/social1.png"
             alt="Instagram Icon"
-            className="w-8 md:w-10"
+            className="w-8 md:w-10 max-w-full"
           />
           <img
             src="/images/linkedin1.png"
             alt="LinkedIn Icon"
-            className="w-8 md:w-10"
+            className="w-8 md:w-10 max-w-full"
           />
           <img
             src="/images/youtube1.png"
             alt="YouTube Icon"
-            className="w-8 md:w-10"
+            className="w-8 md:w-10 max-w-full"
           />
         </div>
 
         {/* Navigation Links - Responsive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-left text-sm md:text-base w-full md:w-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-left text-sm md:text-base md:max-w-full">
           {/* Legal Section */}
-          <div>
+          <div className="mb-6 md:mb-0">
             <h3 className="mb-3 text-lg font-semibold text-fuchsia-500">
               Legal
             </h3>
