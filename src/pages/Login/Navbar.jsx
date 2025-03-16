@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Button from "./Button";
 
@@ -6,8 +7,11 @@ const Navbar = () => {
 
   return (
     <header className="flex justify-between items-center px-10 py-5 border-b border-solid bg-stone-950 border-b-fuchsia-900 shadow-[0_4px_4px_rgba(0,0,0,0.25)] max-sm:p-4">
-      <h1 className="text-4xl text-fuchsia-700 max-sm:text-3xl">CodeHub</h1>
-      {/* Centered the navigation items */}
+       <h1 className="text-3xl font-bold text-white">
+          <span>Code</span>
+          <span className="text-purple-900">Hub</span>
+        </h1>     
+       {/* Centered the navigation items */}
       <nav className="flex items-center justify-center flex-1 gap-16 max-md:gap-5 max-sm:hidden">
         {navItems.map((item) => (
           <a
