@@ -24,7 +24,14 @@ const About = () => {
     return (
 
     <>    
-      <section className="flex flex-col items-center w-full px-8 mt-28 max-md:px-5 max-md:max-w-full">
+     <div
+      className="flex items-center justify-center min-h-screen px-6 text-white"
+      style={{
+        background:
+          "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+      }}
+    >
+      <section className="flex flex-col items-center w-full px-8 mb-28 max-md:px-5 max-md:max-w-full">
         <h2 className="self-end mr-12 text-8xl text-white max-md:mt-10 max-md:mr-2.5 max-md:max-w-full max-md:text-4xl">
           WHERE DREAMS
         </h2>
@@ -48,21 +55,16 @@ const About = () => {
           INTO CODE
         </h2>
       </section>
-   
-  
+      </div>
       
-    
-  
-
-  
-      <section className="flex flex-col items-center mr-28 mt-36 max-md:mt-10">
+      <section className="flex flex-col items-center mr-28 max-md:mt-5">
         <h2 className="ml-16 text-white text-7xl max-md:max-w-full max-md:text-4xl">
           People who makes us a team
         </h2>
         <img
           src={team}
           alt="Team"
-          className="object-contain mt-28 w-full aspect-[1.5] max-w-[895px] ml-16 max-md:mt-10 max-md:max-w-full"
+          className="object-contain mt-20 w-full aspect-[1.5] max-w-[895px] ml-16 max-md:mt-10 max-md:max-w-full"
         />
 
         
@@ -82,7 +84,6 @@ const About = () => {
                     image={sunilpic}
                     name="Sunil Kumar"
                     role="FOUNDER"
-                    
                   />
                 </div>
               </div>
@@ -99,8 +100,8 @@ const About = () => {
           </div>
         </div>
       </section>
-    
-  
+
+
       <section className="flex flex-col items-center w-full px-8 mt-16 mb-16 max-md:px-5">
       <h2 className="flex flex-col items-center mt-16 text-5xl text-white max-md:mt-10 max-md:text-4xl">
         CONTACT US
@@ -136,13 +137,8 @@ const About = () => {
       </div>
     </section>
 
-      </>
+    </>
     );
   };
 
- 
-  
 export default About;
-  
- 
-        

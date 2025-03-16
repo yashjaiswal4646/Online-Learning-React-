@@ -58,23 +58,33 @@ const Courses = () => {
 
   return (
     <>
+     <div
+      className="flex items-center justify-center min-h-screen px-6 text-white"
+      style={{
+        background:
+          "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+      }}
+    >
+    
       {/* Courses Header Section */}
-      <section className="text-center mt-28 max-md:mt-10">
+      <section className="mb-32 text-center max-md:mt-10">
         <h2 className="text-white text-8xl max-md:text-4xl">
           We're not a <span className="text-[#A60AA3]">course</span> <br />
           <span className="text-[#A60AA3]">factory.</span>
         </h2>
-        <p className="text-4xl text-white mt-9">
+        <p className="mt-6 text-4xl text-white">
           We focus on courses that really help.
         </p>
       </section>
+      </div>
+      
 
       {/* Courses Grid Section */}
-      <section className="flex flex-col items-center w-full px-6 mt-20 max-md:px-5 max-md:mt-10">
+      <section className="flex flex-col items-center w-full px-6 max-md:px-5 max-md:mt-6">
         <h2 className="self-start w-full text-4xl text-white">
           Courses That Work
         </h2>
-        <div className="grid w-full max-w-6xl grid-cols-1 gap-20 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid w-full max-w-6xl grid-cols-1 gap-20 mt-6 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((course, index) => (
             <article
               key={index}
