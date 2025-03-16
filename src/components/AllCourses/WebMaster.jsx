@@ -1,8 +1,8 @@
 import React from "react";
-import webmaster from "../Images/Group 31.png";
-import roadmap from "../Images/Group 67.png";
+import webmaster from "/images/Group31.png";
+import roadmap from "/images/Group67.png";
 
-export const WebMaster = () => {
+const WebMaster = () => {
   return (
     <>
       <section className="flex flex-col items-center">
@@ -133,3 +133,4 @@ export const WebMaster = () => {
     </>
   );
 };
+export default WebMaster;

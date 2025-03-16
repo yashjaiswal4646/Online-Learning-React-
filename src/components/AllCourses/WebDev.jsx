@@ -1,39 +1,39 @@
 import React from "react";
-import nodejs from "../Images/Group 32.png"
-import roadmap from "../Images/Group 67.png"
+import webdev from "/images/Group7.png";
+import roadmap from "/images/Group67.png";
 
-export const Nodejs = () => {
+const WebDev = () => {
   return (
     <>
       <section className="flex flex-col items-center">
-        <h2 className="flex flex-wrap justify-center gap-8 mt-20 text-white text-7xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
-          Complete <br />
-          <span className="text-[#A21FB6]">Node.js</span>+
-          <span className="text-[#A21FB6]"> Express.js </span>+
-          <span className="text-[#A21FB6]"> MongoDB</span>
+        <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+          WEB DEV <span className="text-[#A21FB6]">COHORT</span>
         </h2>
 
         <div className="flex flex-wrap gap-5 justify-between mt-36 w-full text-3xl text-black max-w-[1222px] max-md:mt-10 max-md:max-w-full">
-          <button className="px-24 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-            React.js
+          <button className="px-20 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+            HTML
           </button>
           <div className="flex flex-wrap gap-10 max-md:max-w-full">
-            <button className="grow px-24 py-5 mr-28 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-              Node.js
+            <button className="grow px-24 py-5 mr-56 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+              CSS
             </button>
-            <button className="grow px-24 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-              Express.js
+            <button className="grow px-10 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+              JAVASCRIPT
             </button>
           </div>
         </div>
 
         <div className="flex flex-wrap gap-5 justify-between mt-20 w-full text-3xl text-black max-w-[1222px] max-md:mt-10 max-md:max-w-full">
-          <button className="px-24 py-5 ml-44 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-            MongoDB
+          <button className="px-16 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+            NEXT.JS
           </button>
           <div className="flex flex-wrap gap-10 max-md:max-w-full">
-            <button className="grow px-14 py-5 mr-44 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-              Project-focused
+            <button className="grow px-20 py-5 mr-56 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+              NODE
+            </button>
+            <button className="grow px-12 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+              DATABASE
             </button>
           </div>
         </div>
@@ -45,7 +45,7 @@ export const Nodejs = () => {
             <article className="w-full px-px pt-px pb-12 mx-auto border border-solid rounded-xl border-fuchsia-700 bg-stone-950">
               <img
                 loading="lazy"
-                src={nodejs}
+                src={webdev}
                 alt="Course preview"
                 className="object-contain w-full rounded-md aspect-[1.89]"
               />
@@ -76,8 +76,8 @@ export const Nodejs = () => {
           </div>
           <aside className="flex flex-col items-start self-stretch w-2/5 my-auto text-white ml-9 max-md:mt-10">
             <h3 className="self-stretch text-4xl">
-              Price 5999 <span className="text-2xl text-white">₹</span>
-              <span className="text-2xl text-white line-through">11999</span> (+
+              Price 3000 <span className="text-2xl text-white">₹</span>
+              <span className="text-2xl text-white line-through">6000</span> (+
               GST)
             </h3>
             <p className="mt-2.5 text-xl">Limited Time Discount Applied!</p>
@@ -86,7 +86,7 @@ export const Nodejs = () => {
             </button>
             <p className="mt-2.5 text-base">
               Batch Starts on{" "}
-              <span className="text-[#A60AA3]">27st May, 25</span>
+              <span className="text-[#A60AA3]">21st May, 25</span>
             </p>
           </aside>
         </div>
@@ -132,3 +132,4 @@ export const Nodejs = () => {
     </>
   );
 };
+export default WebDev;

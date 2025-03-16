@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Courses = () => {
+
+  let navigate = useNavigate();
+  
   const courses = [
     {
       image: "/images/Group30.png", // ✅ Corrected image path
@@ -8,6 +12,7 @@ const Courses = () => {
       price: "5999",
       originalPrice: "11999",
       discount: "50%",
+      path:"/courses/web-development"
     },
     {
       image: "/images/Group34.png",
@@ -15,6 +20,7 @@ const Courses = () => {
       price: "7000",
       originalPrice: "15000",
       discount: "50%",
+      path:"/courses/hacking"
     },
     {
       image: "/images/Group35.png",
@@ -22,6 +28,7 @@ const Courses = () => {
       price: "7000",
       originalPrice: "15000",
       discount: "50%",
+      path:"/courses/flutter"
     },
     {
       image: "images/Group7.png",
@@ -29,6 +36,7 @@ const Courses = () => {
       price: "4000",
       originalPrice: "8000",
       discount: "50%",
+      path:"/courses/web-dev-cohort"
     },
     {
       image: "images/Group31.png",
@@ -36,6 +44,7 @@ const Courses = () => {
       price: "3000",
       originalPrice: "6000",
       discount: "50%",
+      path:"/courses/web-development-master"
     },
     {
       image: "images/Group32.png",
@@ -43,6 +52,7 @@ const Courses = () => {
       price: "6000",
       originalPrice: "11999",
       discount: "50%",
+      path:"/courses/nodejs"
     },
   ];
 
@@ -107,7 +117,7 @@ const Courses = () => {
               </div>
               {/* View Details Button */}
               <div className="p-5">
-                <button className="w-full px-6 py-2 text-xl text-white transition-colors border rounded-md border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900">
+                <button className="w-full px-6 py-2 text-xl text-white transition-colors border rounded-md border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900" onClick={() => course.path && navigate(course.path)}>
                   View Details
                 </button>
               </div>
