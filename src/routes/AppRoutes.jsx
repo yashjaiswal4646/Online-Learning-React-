@@ -13,7 +13,7 @@ import WebMaster from "../components/AllCourses/WebMaster";
 
 
 
-const AppRoutes = () => {
+function AppRoutes() {
   return (
     <Router>
       <Navbar /> {/* Navbar will be shown on all pages */}
@@ -28,9 +28,9 @@ const AppRoutes = () => {
         <Route path="/courses/web-development-master" element={<WebMaster />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
-};
+}
 
 export default AppRoutes;
