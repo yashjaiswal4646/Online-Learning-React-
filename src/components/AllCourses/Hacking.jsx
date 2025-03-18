@@ -5,6 +5,14 @@ import roadmap from "/images/Group107.png"
 const Hacking = () => {
   return (
     <>
+
+      <div
+        className="flex items-center justify-center min-h-screen px-6 text-white"
+        style={{
+          background:
+            "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+        }}
+      >
       <section className="flex flex-col items-center">
         <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Online Ethical <span className="text-[#A21FB6]">Hacking </span>{" "}
@@ -31,6 +39,7 @@ const Hacking = () => {
           </div>
         </div>
       </section>
+      </div>
 
       <section className="mt-40 ml-20 w-full max-w-[1238px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">

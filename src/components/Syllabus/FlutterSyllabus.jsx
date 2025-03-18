@@ -1,6 +1,6 @@
 import React from "react";
 
-const FlutterCourse = () => {
+const FlutterSyllabus = () => {
   const sections = [
     {
       title: "Introduction and Flutter Installation",
@@ -56,13 +56,15 @@ const FlutterCourse = () => {
   ];
 
   return (
+    <>
+
     <div className="flex flex-col items-center min-h-screen p-8 text-white bg-black">
       <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Online Flutter <span className="text-[#A21FB6]">App</span>
         </h2>
       <h2 className="mt-10 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Development Course
-        </h2>
+        </h2>    
       <div className="w-full max-w-4xl mt-32 space-y-6 ">
         {sections.map((section, index) => (
           <div
@@ -83,7 +85,8 @@ const FlutterCourse = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
-export default FlutterCourse;
+export default FlutterSyllabus;

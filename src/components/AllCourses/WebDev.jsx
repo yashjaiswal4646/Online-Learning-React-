@@ -5,6 +5,14 @@ import roadmap from "/images/Group67.png";
 const WebDev = () => {
   return (
     <>
+
+      <div
+        className="flex items-center justify-center min-h-screen px-6 text-white"
+        style={{
+          background:
+            "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+        }}
+      >
       <section className="flex flex-col items-center">
         <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           WEB DEV <span className="text-[#A21FB6]">COHORT</span>
@@ -15,7 +23,7 @@ const WebDev = () => {
             HTML
           </button>
           <div className="flex flex-wrap gap-10 max-md:max-w-full">
-            <button className="grow px-24 py-5 mr-56 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+            <button className="grow px-24 py-5 mr-36 ml-36 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
               CSS
             </button>
             <button className="grow px-10 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
@@ -29,7 +37,7 @@ const WebDev = () => {
             NEXT.JS
           </button>
           <div className="flex flex-wrap gap-10 max-md:max-w-full">
-            <button className="grow px-20 py-5 mr-56 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+            <button className="grow px-20 py-5 mr-36 ml-36  whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
               NODE
             </button>
             <button className="grow px-12 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
@@ -38,6 +46,7 @@ const WebDev = () => {
           </div>
         </div>
       </section>
+      </div>
 
       <section className="mt-40 ml-20 w-full max-w-[1238px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
