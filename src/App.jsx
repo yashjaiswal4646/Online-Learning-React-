@@ -1,11 +1,18 @@
-import AppRoutes from "./routes/AppRoutes";
+// import AppRoutes from "./routes/AppRoutes";
+
+import { BrowserRouter } from "react-router-dom";
+import AdminCourse from "./components/Admin/AdminCourse";
+
 
 
 
 function App() {
   return (
     <>
-   <AppRoutes />;
+   {/* <AppRoutes />; */}
+   <BrowserRouter>
+     <AdminCourse/>
+   </BrowserRouter>
    
   </>
 )

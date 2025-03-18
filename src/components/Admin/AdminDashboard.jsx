@@ -22,20 +22,11 @@ const AdminDashboard = () => {
       {/* Main Content */}
       <div className="flex flex-col flex-1">
         {/* Navigation Bar */}
-        <header className="flex items-center px-10 py-5 border-b border-solid bg-stone-950 border-b-fuchsia-900 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-sm:p-4">
-          <h1 className="text-4xl mr-36 text-fuchsia-700 max-sm:text-3xl">
-            CodeHub
+        <header className="flex items-center justify-center px-10 py-5 border-b border-solid bg-stone-950 border-b-fuchsia-900 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-sm:p-4">
+          <h1 className="text-3xl font-bold text-white">
+            <span>Code</span>
+            <span className="text-fuchsia-500">Hub</span>
           </h1>
-          <nav className="flex gap-16 max-md:gap-8 max-sm:hidden">
-            {["Home", "Course", "About"].map((item) => (
-              <button
-                key={item}
-                className="text-4xl cursor-pointer max-md:text-3xl relative z-0 transition-transform duration-300 hover:z-10 hover:scale-110 hover:shadow-[0_15px_30px_rgba(0,0,0,0.5)] hover:text-fuchsia-400"
-              >
-                {item}
-              </button>
-            ))}
-          </nav>
         </header>
 
         {/* Dashboard Content */}
