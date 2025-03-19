@@ -1,7 +1,7 @@
 import React from "react";
 
-const AdminDashboard = () => {
-  const menuItems = ["Dashboard", "Course", "Setting", "Student", "Instructor"];
+const AdminCourse = () => {
+  const menuItems = ["Dashboard", "Course", "Student", "Instructor", "Setting"];
   const courses = [
     {
       id: "101",
@@ -46,6 +46,10 @@ const AdminDashboard = () => {
         {/* Dashboard Content */}
         <main className="flex-1 p-7 max-sm:p-4">
           <h2 className="text-4xl mb-9">Course List</h2>
+          
+          <button className="mb-8 h-16 text-xl text-white border border-fuchsia-700 border-solid cursor-pointer bg-stone-950 w-[228px] max-sm:w-full hover:bg-fuchsia-700">
+            Add new Courses
+          </button>
 
           {/* Course Table */}
           <div className="border border-white border-solid bg-stone-950 max-sm:overflow-x-auto">
@@ -68,12 +72,12 @@ const AdminDashboard = () => {
                 <div className="p-2 text-base text-white">{course.enrollment}</div>
                 <div className="flex items-center p-2 text-base text-white">
                   <div className="flex gap-3">
-                    <button className="px-3 py-1 text-base text-white rounded-sm cursor-pointer bg-stone-900">
-                      Edit
-                    </button>
-                    <button className="px-3 py-1 text-base text-white rounded-sm cursor-pointer bg-stone-900">
-                      Delete
-                    </button>
+                  <button className="px-3 py-1 text-base text-white transition-colors duration-300 rounded-sm cursor-pointer bg-stone-900 hover:bg-fuchsia-700 hover:text-black">
+                        Edit
+                      </button>
+                      <button className="px-3 py-1 text-base text-white transition-colors duration-300 rounded-sm cursor-pointer bg-stone-900 hover:bg-red-600 hover:text-black">
+                        Delete
+                      </button>
                   </div>
                 </div>
               </div>
@@ -90,4 +94,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default AdminCourse;
