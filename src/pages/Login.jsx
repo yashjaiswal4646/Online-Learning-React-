@@ -1,14 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const navigate = useNavigate();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate("/");  
   };
 
   const navItems = ["Home", "Course", "About", "Admin"];
 
   return (
-    <div className="min-h-screen bg-stone-950 text-white">
+    <div className="min-h-screen text-white bg-stone-950">
       {/* Navbar */}
       <header className="flex justify-between items-center px-10 py-5 border-b border-solid bg-stone-950 border-b-fuchsia-900 shadow-[0_4px_4px_rgba(0,0,0,0.25)] max-sm:p-4">
         <h1 className="text-3xl font-bold">

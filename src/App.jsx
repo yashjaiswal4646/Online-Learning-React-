@@ -1,17 +1,20 @@
-// import AppRoutes from "./routes/AppRoutes";
+import AppRoutes from "./routes/AppRoutes";
 
-import { BrowserRouter } from "react-router-dom";
-import Signup from "./pages/Signup";
+// import { BrowserRouter } from "react-router-dom";
+// import Signup from "./pages/Signup";
 
 
 
 function App() {
   return (
     <>
-   {/* <AppRoutes />; */}
-   <BrowserRouter>
+   <AppRoutes />;
+
+
+
+   {/* <BrowserRouter>
      <Signup/>
-   </BrowserRouter>
+   </BrowserRouter> */}
    
   </>
 )

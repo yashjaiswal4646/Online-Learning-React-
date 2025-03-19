@@ -11,6 +11,8 @@ import Nodejs from "../components/AllCourses/Nodejs";
 import WebDev from "../components/AllCourses/WebDev";
 import WebMaster from "../components/AllCourses/WebMaster";
 import FlutterSyllabus from "../components/Syllabus/FlutterSyllabus";
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 
 
@@ -29,6 +31,8 @@ function AppRoutes() {
         <Route path="/courses/web-development-master" element={<WebMaster />} />
         <Route path="/FlutterSyllabus" element={<FlutterSyllabus/>} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
       </Routes>
       <Footer />
     </Router>
