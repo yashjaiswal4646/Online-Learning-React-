@@ -1,6 +1,7 @@
 // import AppRoutes from "./routes/AppRoutes";
 
 import { BrowserRouter } from "react-router-dom";
+import Signup from "./pages/Signup";
 
 
 
@@ -9,7 +10,7 @@ function App() {
     <>
    {/* <AppRoutes />; */}
    <BrowserRouter>
-     
+     <Signup/>
    </BrowserRouter>
    
   </>
