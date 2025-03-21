@@ -64,7 +64,7 @@ const EthicalCourse = () => {
         },
         {
             title: "Networking Scanning",
-            item: [
+            items: [
                 "What is network scanning?",
                 "Checking for software with versions",
                 "Network scanning methodology",
@@ -76,7 +76,7 @@ const EthicalCourse = () => {
                 "Checking for services on ports",
             ],
         },
-    ]
+    ];
 
     return (
         <div className="flex flex-col items-center min-h-screen p-8 text-white bg-black">

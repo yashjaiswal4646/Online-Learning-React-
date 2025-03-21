@@ -4,7 +4,7 @@ const WebDeCourse = () => {
     const sections = [
         {
             title: "Networking",
-            item: [
+            items: [
                 "Indroduction to networking",
                 "Networking concepts",
                 "Networking protocols",
@@ -18,7 +18,7 @@ const WebDeCourse = () => {
         },
         {
             title : "Linux",
-            item: [
+            items: [
                 "What is Linux?",
                 "Basic Linux commands (Practical)",
                 "Cool Features of Linux",
@@ -29,7 +29,7 @@ const WebDeCourse = () => {
         },
         {
             title: "Setting Up Ethical Hacking Lab",
-            item: [
+            items: [
                 "Setting Up Lab",
                 "Installing Kali or Parrot OS in VMware or VirtualBox",
                 "Install VMware or Virtual Box",
@@ -38,7 +38,7 @@ const WebDeCourse = () => {
         },
         {
             title: "Footprinting And Reconnaissance",
-            item: [
+            items: [
                 "Introduction to Footprinting & Reconnaissance",
                 "Types of Footprinting",
                 "Website footprinting using Netcraft, Wappalyzer, 3rd party sources",
@@ -56,7 +56,7 @@ const WebDeCourse = () => {
         },
         {
             title: "Network Scanning",
-            item: [
+            items: [
                 "What is network scanning?",
                 "Checking for software with versions",
                 "Network scanning methodology",
@@ -68,7 +68,7 @@ const WebDeCourse = () => {
                 "Checking for services on ports",
             ],
         },
-    ]
+    ];
 
     return (
         <div className="flex flex-col items-center min-h-screen p-8 text-white bg-black">

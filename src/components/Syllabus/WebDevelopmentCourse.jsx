@@ -4,7 +4,7 @@ const WebDevlopmentCourse = () => {
     const sections = [
         {
             title: "Generate AI & Application",   
-            item: [
+            items: [
                 "Overview of Generative AI",
                 "Building Application with Generative AI",
                 "Longcahin for Generative AI",
@@ -13,7 +13,7 @@ const WebDevlopmentCourse = () => {
         },
         {
             title: "Frontend Development", 
-            item: [
+            items: [
                 "HTML",
                 "CSS",
                 "JavaScript",
@@ -23,7 +23,7 @@ const WebDevlopmentCourse = () => {
         },
         {
             title: "Backend Development", 
-            item: [
+            items: [
                 "Node.js",
                 "Database",
                 "API Development (REST)",
@@ -33,7 +33,7 @@ const WebDevlopmentCourse = () => {
         },
         {
             title: "DSA",
-            item: [
+            items: [
                 "Fundamentals",
                 "Pattern Programming",
                 "Time and Space Complexity",
@@ -43,7 +43,7 @@ const WebDevlopmentCourse = () => {
         },
         {
             title: "Data Structures",
-            item: [
+            items: [
                 "Arrays (1-D, Multi-D)",
                 "String",
                 "Linked Lists",
@@ -54,7 +54,7 @@ const WebDevlopmentCourse = () => {
         },
         {
             title: "Apptitude & Reasoning",
-            item: [
+            items: [
                 "Percentage",
                 "Profit & Loss",
                 "Compound Interest",
@@ -67,7 +67,7 @@ const WebDevlopmentCourse = () => {
 
             ],
         },
-    ]
+    ];
 
     return (
         <div className="flex flex-col items-center min-h-screen p-8 text-white bg-black">
