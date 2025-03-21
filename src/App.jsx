@@ -1,20 +1,22 @@
-import AppRoutes from "./routes/AppRoutes";
+//import AppRoutes from "./routes/AppRoutes";
+import WebMasterCourse from "./components/Syllabus/WebMasterCourse";
 
-// import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 // import Signup from "./pages/Signup";
+
 
 
 
 function App() {
   return (
     <>
-   <AppRoutes />;
+   {/* <AppRoutes />; */}
 
 
 
-   {/* <BrowserRouter>
-     <Signup/>
-   </BrowserRouter> */}
+   <BrowserRouter>
+     <WebMasterCourse/>
+   </BrowserRouter>
    
   </>
 )
