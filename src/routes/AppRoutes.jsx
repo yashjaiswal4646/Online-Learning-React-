@@ -28,21 +28,26 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<Courses />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
+
+        {/* All Courses */}
         <Route path="/courses/web-development" element={<WebDevlopment />} />
         <Route path="/courses/hacking" element={<Hacking />} />
         <Route path="/courses/flutter" element={<Flutter />} />
         <Route path="/courses/nodejs" element={<Nodejs />} />
         <Route path="/courses/web-dev-cohort" element={<WebDev />} />
         <Route path="/courses/web-development-master" element={<WebMaster />} />
+
+        {/* All Syllabus */}
         <Route path="/FlutterSyllabus" element={<FlutterSyllabus/>} />
         <Route path="/WebDevSyllabus" element={<WebDevSyllabus/>} />
         <Route path="/WebDevelopmentSyllabus" element={<WebDevelopmentSyllabus/>} />
         <Route path="/WebMasterSyllabus" element={<WebMasterSyllabus/>} />
         <Route path="/HackingSyllabus" element={<HackingSyllabus/>} />
 
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />
+        
       </Routes>
       <Footer />
     </Router>

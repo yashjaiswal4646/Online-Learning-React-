@@ -1,8 +1,7 @@
-import AppRoutes from "./routes/AppRoutes";
+// import AppRoutes from "./routes/AppRoutes";
 
-// import { BrowserRouter } from "react-router-dom";
-// import WebMasterSyllabus from "./components/Syllabus/WebMasterSyllabus";
-// import Signup from "./pages/Signup";
+import { BrowserRouter } from "react-router-dom";
+import AdminLogin from "./components/Admin/AdminLogin";
 
 
 
@@ -10,13 +9,13 @@ import AppRoutes from "./routes/AppRoutes";
 function App() {
   return (
     <>
-   <AppRoutes />;
+   {/* <AppRoutes />; */}
 
 
 
-   {/* <BrowserRouter>
-     <WebMasterSyllabus/>
-   </BrowserRouter> */}
+   <BrowserRouter>
+     <AdminLogin/>
+   </BrowserRouter>
    
   </>
 )
