@@ -57,9 +57,16 @@ const FlutterSyllabus = () => {
 
   return (
     <>
-
-    <div className="flex flex-col items-center min-h-screen p-8 text-white bg-black">
-      <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+    
+      <div
+        className="flex items-center justify-center min-h-screen px-6 text-white"
+        style={{
+          background:
+            "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+        }}
+      >
+    <div className="flex flex-col items-center" >
+      <h2 className="text-white mt-44 text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Online Flutter <span className="text-[#A21FB6]">App</span>
         </h2>
       <h2 className="mt-10 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
@@ -84,6 +91,7 @@ const FlutterSyllabus = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
     </>
   );

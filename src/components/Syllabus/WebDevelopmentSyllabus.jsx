@@ -70,8 +70,17 @@ const WebDevelopmentSyllabus = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center min-h-screen p-8 text-white bg-black">
-         <h2 className="mt-20 text-white text-7xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+      <>
+
+      <div
+        className="flex items-center justify-center min-h-screen px-6 text-white"
+        style={{
+          background:
+            "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+        }}
+      >
+        <div className="flex flex-col items-center ">
+         <h2 className="text-white mt-44 text-7xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           <span className="ml-20">
             Job Ready <span className="text-[#A21FB6]"> AI </span> Powered
             Cohort :{" "}
@@ -100,6 +109,8 @@ const WebDevelopmentSyllabus = () => {
             ))}
           </div>
         </div>
+        </div>
+      </>
      );
 };
 
