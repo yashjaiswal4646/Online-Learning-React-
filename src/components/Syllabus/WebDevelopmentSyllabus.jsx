@@ -1,6 +1,6 @@
 import React from "react";
 
-const WebDevlopmentCourse = () => {
+const WebDevelopmentSyllabus = () => {
     const sections = [
         {
             title: "Generate AI & Application",   
@@ -103,4 +103,4 @@ const WebDevlopmentCourse = () => {
      );
 };
 
-export default WebDevlopmentCourse;
+export default WebDevelopmentSyllabus;

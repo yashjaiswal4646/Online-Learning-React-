@@ -1,6 +1,6 @@
 import React from "react";
 
-const EthicalCourse = () => {
+const HackingSyllabus = () => {
     const sections = [
         {
             title: "Networking",
@@ -79,6 +79,7 @@ const EthicalCourse = () => {
     ]
 
     return (
+      <>
         <div className="flex flex-col items-center min-h-screen p-8 text-white bg-black">
           <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Online Ethical <span className="text-[#A21FB6]">Hacking </span>{" "}
@@ -104,7 +105,8 @@ const EthicalCourse = () => {
             ))}
           </div>
         </div>
+        </>
      );
 };
 
-export default EthicalCourse;
+export default HackingSyllabus;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const WebDeCourse = () => {
+const WebDevSyllabus = () => {
     const sections = [
         {
             title: "Networking",
@@ -98,4 +98,4 @@ const WebDeCourse = () => {
      );
 };
 
-export default WebDeCourse;
+export default WebDevSyllabus;

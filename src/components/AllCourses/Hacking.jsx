@@ -1,8 +1,12 @@
 import React from "react";
 import imghacking from "/images/Group34.png"
 import roadmap from "/images/Group107.png"
+import { useNavigate } from "react-router-dom";
 
 const Hacking = () => {
+
+     let navigate = useNavigate();
+  
   return (
     <>
 
@@ -118,7 +122,7 @@ const Hacking = () => {
           Dominate. From <span className="text-[#A60AA3]">Start</span> to
           Victory.
         </p>
-        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors">
+        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors" onClick={() => navigate("/HackingSyllabus")}>
           View Complete Syllabus
         </button>
       </section>

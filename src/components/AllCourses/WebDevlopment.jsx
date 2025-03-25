@@ -1,8 +1,12 @@
 import React from "react";
 import Webdevelopment from "/images/Group30.png";
 import roadmap from "/images/Group67.png";
+import { useNavigate } from "react-router-dom";
 
 const WebDevlopment = () => {
+
+     let navigate = useNavigate();
+  
   return (
     <>
 
@@ -128,7 +132,7 @@ const WebDevlopment = () => {
           Dominate. From <span className="text-[#A60AA3]">Start</span> to
           Victory.
         </p>
-        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors">
+        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors" onClick={() => navigate("/WebDevelopmentSyllabus")}>
           View Complete Syllabus
         </button>
       </section>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const WebMasterCourse = () => {
+const WebMasterSyllabus = () => {
   const sections = [
     {
       title: "HTML Basics",
@@ -88,4 +88,4 @@ const WebMasterCourse = () => {
   );
 };
 
-export default WebMasterCourse;
+export default WebMasterSyllabus;
