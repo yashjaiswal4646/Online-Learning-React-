@@ -64,7 +64,7 @@ const HackingSyllabus = () => {
         },
         {
             title: "Networking Scanning",
-            item: [
+            items: [
                 "What is network scanning?",
                 "Checking for software with versions",
                 "Network scanning methodology",
@@ -76,7 +76,7 @@ const HackingSyllabus = () => {
                 "Checking for services on ports",
             ],
         },
-    ]
+    ];
 
     return (
       <>

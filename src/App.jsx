@@ -1,10 +1,8 @@
-// import AppRoutes from "./routes/AppRoutes";
+//import AppRoutes from "./routes/AppRoutes";
+import WebMasterCourse from "./components/Syllabus/WebMasterCourse";
 
 import { BrowserRouter } from "react-router-dom";
-// import WebDevelopmentSyllabus from "./components/Syllabus/WebDevelopmentSyllabus";
-// import WebMasterSyllabus from "./components/Syllabus/WebMasterSyllabus";
-// import WebDevSyllabus from "./components/Syllabus/WebDevSyllabus";
-import HackingSyllabus from "./components/Syllabus/HackingSyllabus";
+// import Signup from "./pages/Signup";
 
 
 
@@ -17,7 +15,7 @@ function App() {
 
 
    <BrowserRouter>
-     <HackingSyllabus/>
+     <WebMasterCourse/>
    </BrowserRouter>
    
   </>
