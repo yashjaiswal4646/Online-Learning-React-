@@ -1,7 +1,8 @@
 // import AppRoutes from "./routes/AppRoutes";
 
 import { BrowserRouter } from "react-router-dom";
-import Profile from "./pages/Profile";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+//import Profile from "./pages/Profile";
 
 
 
@@ -14,7 +15,7 @@ function App() {
 
 
    <BrowserRouter>
-     <Profile/>
+     <PrivacyPolicy/>
    </BrowserRouter>
    
   </>
