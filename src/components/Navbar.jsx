@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo */}
         <h1 className="text-3xl font-bold text-white">
           <span>Code</span>
-          <span className="text-fuchsia-500">Hub</span>
+          <span className="text-fuchsia-500 ">Hub</span>
         </h1>
 
         {/* Desktop Navigation */}
