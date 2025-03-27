@@ -1,7 +1,7 @@
 // import AppRoutes from "./routes/AppRoutes";
 
 import { BrowserRouter } from "react-router-dom";
-import AdminLogin from "./components/Admin/AdminLogin";
+import Profile from "./pages/Profile";
 
 
 
@@ -14,7 +14,7 @@ function App() {
 
 
    <BrowserRouter>
-     <AdminLogin/>
+     <Profile/>
    </BrowserRouter>
    
   </>
