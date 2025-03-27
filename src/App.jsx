@@ -1,13 +1,7 @@
-import AppRoutes from "./routes/AppRoutes";
+// import AppRoutes from "./routes/AppRoutes";
 
-<<<<<<< HEAD
 import { BrowserRouter } from "react-router-dom";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-//import Profile from "./pages/Profile";
-=======
-// import { BrowserRouter } from "react-router-dom";
-// import Profile from "./pages/Profile";
->>>>>>> 9305d7ac371a3321fdcb278b7cb7adea62baea35
 
 
 
@@ -15,19 +9,13 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
   return (
     <>
-   <AppRoutes />;
+   <AppRoutes />
 
 
 
-<<<<<<< HEAD
    <BrowserRouter>
      <PrivacyPolicy/>
    </BrowserRouter>
-=======
-   {/* <BrowserRouter>
-     <Profile/>
-   </BrowserRouter> */}
->>>>>>> 9305d7ac371a3321fdcb278b7cb7adea62baea35
    
   </>
 )
