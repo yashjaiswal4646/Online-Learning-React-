@@ -1,9 +1,22 @@
 import React from "react";
 import imgflutter from "/images/Group35.png";
 import roadmap from "/images/Group109.png"
+import { useNavigate } from "react-router-dom";
+
 const Flutter = () => {
+  
+   let navigate = useNavigate();
+
   return (
     <>
+
+     <div
+        className="flex items-center justify-center min-h-screen px-6 text-white"
+        style={{
+          background:
+            "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+        }}
+      >
       <section className="flex flex-col items-center">
         <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Online Flutter <span className="text-[#A21FB6]">App</span>
@@ -16,7 +29,7 @@ const Flutter = () => {
             Basics of Dart
           </button>
           <div className="flex flex-wrap gap-10 max-md:max-w-full">
-            <button className="grow px-20 py-5 mr-20 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+            <button className="grow px-20 py-5 mr-20 ml-20 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
               Flutter
             </button>
             <button className="grow px-10 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
@@ -25,6 +38,7 @@ const Flutter = () => {
           </div>
         </div>
       </section>
+      </div>
 
       <section className="mt-40 ml-20 w-full max-w-[1238px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
@@ -103,7 +117,7 @@ const Flutter = () => {
           Dominate. From <span className="text-[#A60AA3]">Start</span> to
           Victory.
         </p>
-        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors">
+        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors" onClick={() => navigate("/FlutterSyllabus")}>
           View Complete Syllabus
         </button>
       </section>

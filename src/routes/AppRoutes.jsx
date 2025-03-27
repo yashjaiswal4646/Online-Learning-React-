@@ -10,6 +10,14 @@ import Flutter from "../components/AllCourses/Flutter";
 import Nodejs from "../components/AllCourses/Nodejs";
 import WebDev from "../components/AllCourses/WebDev";
 import WebMaster from "../components/AllCourses/WebMaster";
+import FlutterSyllabus from "../components/Syllabus/FlutterSyllabus";
+import HackingSyllabus from "../components/Syllabus/HackingSyllabus";
+// import NodejsSyllabus from "../components/Syllabus/NodejsSyllabus";
+import WebDevSyllabus from "../components/Syllabus/WebDevSyllabus";
+import WebMasterSyllabus from "../components/Syllabus/WebMasterSyllabus";
+import WebDevelopmentSyllabus from "../components/Syllabus/WebDevelopmentSyllabus"
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 
 
@@ -20,13 +28,26 @@ function AppRoutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<Courses />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
+
+        {/* All Courses */}
         <Route path="/courses/web-development" element={<WebDevlopment />} />
         <Route path="/courses/hacking" element={<Hacking />} />
         <Route path="/courses/flutter" element={<Flutter />} />
         <Route path="/courses/nodejs" element={<Nodejs />} />
         <Route path="/courses/web-dev-cohort" element={<WebDev />} />
         <Route path="/courses/web-development-master" element={<WebMaster />} />
-        <Route path="/about" element={<About />} />
+
+        {/* All Syllabus */}
+        <Route path="/FlutterSyllabus" element={<FlutterSyllabus/>} />
+        <Route path="/WebDevSyllabus" element={<WebDevSyllabus/>} />
+        <Route path="/WebDevelopmentSyllabus" element={<WebDevelopmentSyllabus/>} />
+        <Route path="/WebMasterSyllabus" element={<WebMasterSyllabus/>} />
+        <Route path="/HackingSyllabus" element={<HackingSyllabus/>} />
+
+        
       </Routes>
       <Footer />
     </Router>

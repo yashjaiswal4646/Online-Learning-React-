@@ -1,10 +1,22 @@
 import React from "react";
 import imghacking from "/images/Group34.png"
 import roadmap from "/images/Group107.png"
+import { useNavigate } from "react-router-dom";
 
 const Hacking = () => {
+
+     let navigate = useNavigate();
+  
   return (
     <>
+
+      <div
+        className="flex items-center justify-center min-h-screen px-6 text-white"
+        style={{
+          background:
+            "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+        }}
+      >
       <section className="flex flex-col items-center">
         <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Online Ethical <span className="text-[#A21FB6]">Hacking </span>{" "}
@@ -31,6 +43,7 @@ const Hacking = () => {
           </div>
         </div>
       </section>
+      </div>
 
       <section className="mt-40 ml-20 w-full max-w-[1238px] max-md:mt-10 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col">
@@ -109,7 +122,7 @@ const Hacking = () => {
           Dominate. From <span className="text-[#A60AA3]">Start</span> to
           Victory.
         </p>
-        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors">
+        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors" onClick={() => navigate("/HackingSyllabus")}>
           View Complete Syllabus
         </button>
       </section>
