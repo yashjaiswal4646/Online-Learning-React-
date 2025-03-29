@@ -1,7 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const AdminDashboard = () => {
-  const navItems = ["Dashboard", "Course", "Student", "Instructor", "Setting"];
+  const navItems = [
+    { name: "Dashboard", path: "/" },
+    { name: "Course", path: "/courses" },
+    { name: "Student", path: "/students" },
+    { name: "Instructor", path: "/instructors" },
+    { name: "Setting", path: "/settings" },
+  ];
   const stats = ["Total Student = 0", "Course = 0", "Active Instruction = 0"];
 
   return (
@@ -10,12 +18,14 @@ const AdminDashboard = () => {
       <nav className="p-7 bg-fuchsia-700 bg-opacity-10 w-[450px] max-sm:p-4 max-sm:w-full">
         <h2 className="text-4xl mb-14">Admin Panel</h2>
         {navItems.map((item) => (
+          <Link to={item.path} key={item.name}>
           <button
             key={item}
             className="block text-3xl transition-transform duration-300 cursor-pointer mb-9 relative z-0 hover:z-10 hover:scale-110 hover:shadow-[0_15px_30px_rgba(0,0,0,0.5)] hover:text-fuchsia-400"
           >
-            {item}
+            {item.name}
           </button>
+          </Link>
         ))}
       </nav>
 

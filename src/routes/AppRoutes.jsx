@@ -12,20 +12,24 @@ import WebDev from "../components/AllCourses/WebDev";
 import WebMaster from "../components/AllCourses/WebMaster";
 import FlutterSyllabus from "../components/Syllabus/FlutterSyllabus";
 import HackingSyllabus from "../components/Syllabus/HackingSyllabus";
-// import NodejsSyllabus from "../components/Syllabus/NodejsSyllabus";
 import WebDevSyllabus from "../components/Syllabus/WebDevSyllabus";
 import WebMasterSyllabus from "../components/Syllabus/WebMasterSyllabus";
 import WebDevelopmentSyllabus from "../components/Syllabus/WebDevelopmentSyllabus"
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import AdminDashboard from "../components/Admin/AdminDashboard";
+import AdminCourse from "../components/Admin/AdminCourse";
+import AdminStudent from "../components/Admin/AdminStudent";
+import AdminInstructor from "../components/Admin/AdminInstructor";
+import AdminSettings from "../components/Admin/AdminSetting";
 
 
 
 function AppRoutes() {
   return (
     <Router>
-      <Navbar /> {/* Navbar will be shown on all pages */}
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<Courses />} />
@@ -48,6 +52,17 @@ function AppRoutes() {
         <Route path="/WebDevelopmentSyllabus" element={<WebDevelopmentSyllabus/>} />
         <Route path="/WebMasterSyllabus" element={<WebMasterSyllabus/>} />
         <Route path="/HackingSyllabus" element={<HackingSyllabus/>} />
+
+        {/* All Admin Pages */}
+        <Route path="/" element={<AdminDashboard />} />
+        <Route path="/courses" element={<AdminCourse/>} />
+        <Route path="/students" element={<AdminStudent/>} />
+        <Route path="/instructors" element={<AdminInstructor/>} />
+        <Route path="/settings" element={<AdminSettings/>} />
+
+
+
+
 
         
       </Routes>
