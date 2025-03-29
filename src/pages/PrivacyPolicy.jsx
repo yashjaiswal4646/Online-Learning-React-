@@ -8,28 +8,20 @@ const PrivacyPolicy = () => {
         color: "white",
         padding: "20px",
         fontFamily: "Arial",
+        marginTop: "100px",
+        marginLeft: "40px",
+        marginRight: "40px",
       }}
     >
-      <button
-        style={{
-          backgroundColor: "#333",
-          color: "white",
-          fontSize: "20px",
-          padding: "12px",
-          border: "none",
-          cursor: "pointer",
-        }}
-      >
-        Back To Home
-      </button>
-      <h1 style={{ marginBottom: "15px" }}>Introduction</h1>
+      
+      <h1 style={{ marginBottom: "15px", fontSize:"50px" }}>Introduction</h1>
       <p style={{ marginBottom: "20px" }}>
         These Privacy Policy govern your use of our website and services. By
         accessing or using our services, you agree to be bound by these terms.
       </p>
       <h2 style={{ marginBottom: "5px" }}>Chai Code Privacy Policy</h2>
       <h3 style={{ marginBottom: "10px" }}>Privacy policy</h3>
-      <h3 style={{ marginBottom: "10px" }}>
+      <h3 style={{ marginBottom: "10px", fontSize:"20px" }}>
         SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?
       </h3>
       <p style={{ marginBottom: "20px" }}>
@@ -41,7 +33,7 @@ const PrivacyPolicy = () => {
         browser and operating system. Email marketing: With your permission, we
         may send you emails about our store, new products and other updates.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>SECTION 2 - CONSENT</h3>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>SECTION 2 - CONSENT</h3>
       <p style={{ marginBottom: "10px" }}>How do you get my consent?</p>
       <p style={{ marginBottom: "20px" }}>
         How do you get my consent? When you provide us with personal information
@@ -59,12 +51,12 @@ const PrivacyPolicy = () => {
         for your expressed consent, or provide you with an opportunity to say
         no.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>SECTION 3 - DISCLOSURE</h3>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>SECTION 3 - DISCLOSURE</h3>
       <p style={{ marginBottom: "20px" }}>
         We may disclose your personal information if we are required by law to
         do so or if you violate our Terms of Service.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>SECTION 4 - PAYMENT</h3>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>SECTION 4 - PAYMENT</h3>
       <p style={{ marginBottom: "20px" }}>
         We use Razorpay for processing payments. We/Razorpay do not store your
         card data on their servers. The data is encrypted through the Payment
@@ -79,7 +71,7 @@ const PrivacyPolicy = () => {
         its service providers. For more insight, you may also want to read terms
         and conditions of razorpay on,
       </p>
-      <h3 style={{ marginBottom: "15px" }}>SECTION 5 - THIRD-PARTY SERVICES</h3>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>SECTION 5 - THIRD-PARTY SERVICES</h3>
       <p style={{ marginBottom: "20px" }}>
         In general, the third-party providers used by us will only collect, use
         and disclose your information to the extent necessary to allow them to
@@ -102,25 +94,25 @@ const PrivacyPolicy = () => {
         away from our site. We are not responsible for the privacy practices of
         other sites and encourage you to read their privacy statements.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>SECTION 6 - SECURITY</h3>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>SECTION 6 - SECURITY</h3>
       <p style={{ marginBottom: "20px" }}>
         To protect your personal information, we take reasonable precautions and
         follow industry best practices make sure it is not inappropriately lost,
         misused, accessed, disclosed, altered or destroyed.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>SECTION 7 - COOKIES</h3>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>SECTION 7 - COOKIES</h3>
       <p style={{ marginBottom: "20px" }}>
         We use cookies to maintain session of your user. It is not used to
         personally identify you on other websites.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>SECTION 8 - AGE OF CONSENT</h3>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>SECTION 8 - AGE OF CONSENT</h3>
       <p style={{ marginBottom: "20px" }}>
         By using this site, you represent that you are at least the age of
         majority in your state or province of residence, or that you are the age
         of majority in your state or province of residence and you have given us
         your consent to allow any of your minor dependents to use this site.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>
+      <h3 style={{ marginBottom: "15px", fontSize:"20px" }}>
         SECTION 9 - CHANGES TO THIS PRIVACY POLICY
       </h3>
       <p style={{ marginBottom: "20px" }}>
@@ -134,7 +126,7 @@ const PrivacyPolicy = () => {
         information may be transferred to the new owners so that we may continue
         to sell products to you.
       </p>
-      <h3 style={{ marginBottom: "15px" }}>
+      <h3 style={{ marginBottom: "15px" , fontSize:"20px" }}>
         QUESTIONS AND CONTACT INFORMATION
       </h3>
       <p style={{ marginBottom: "20px" }}>

@@ -18,6 +18,7 @@ import WebMasterSyllabus from "../components/Syllabus/WebMasterSyllabus";
 import WebDevelopmentSyllabus from "../components/Syllabus/WebDevelopmentSyllabus"
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 
 
 
@@ -31,6 +32,7 @@ function AppRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
 
         {/* All Courses */}
         <Route path="/courses/web-development" element={<WebDevlopment />} />
