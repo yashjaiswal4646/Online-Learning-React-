@@ -9,13 +9,14 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
   return (
     <>
-   <AppRoutes />
+   {/* <AppRoutes /> */}
 
 
 
    <BrowserRouter>
      <PrivacyPolicy/>
    </BrowserRouter>
+   
    
   </>
 )
