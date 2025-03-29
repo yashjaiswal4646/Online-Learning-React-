@@ -1,7 +1,7 @@
-import AppRoutes from "./routes/AppRoutes";
+// import AppRoutes from "./routes/AppRoutes";
 
-// import { BrowserRouter } from "react-router-dom";
-// import Profile from "./pages/Profile";
+import { BrowserRouter } from "react-router-dom";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 
 
@@ -9,13 +9,13 @@ import AppRoutes from "./routes/AppRoutes";
 function App() {
   return (
     <>
-   <AppRoutes />;
+   <AppRoutes />
 
 
 
-   {/* <BrowserRouter>
-     <Profile/>
-   </BrowserRouter> */}
+   <BrowserRouter>
+     <PrivacyPolicy/>
+   </BrowserRouter>
    
   </>
 )
