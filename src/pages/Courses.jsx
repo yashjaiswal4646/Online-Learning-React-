@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 const ViewDetailsButton = ({ path }) => {
   let navigate = useNavigate();
   return (
-    <div className="p-5">
+    <div className="p-5 flex justify-center">
       <button
-        className="w-full px-6 py-2 text-xl text-white transition-colors border rounded-md border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900"
+        className="w-72 px-8 py-3 text-2xl text-white transition-colors border rounded-md border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900"
         onClick={() => path && navigate(path)}
       >
         View Details
@@ -90,32 +90,34 @@ const Courses = () => {
         <h2 className="self-start w-full text-4xl text-white">Courses That Work</h2>
         <div className="grid w-full max-w-6xl grid-cols-1 gap-20 mt-6 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((course, index) => (
-            <article key={index} className="flex flex-col h-full border border-solid rounded-md border-fuchsia-700 bg-stone-950">
-              <div className="flex flex-col flex-grow p-5">
-                <img src={course.image} alt={course.title} className="object-contain w-full h-48 rounded-md" />
-                <div className="flex flex-col flex-grow w-full mt-5">
-                  <h3 className="text-xl text-white">{course.title}</h3>
-                  <div className="flex gap-4 mt-3.5">
-                    <span className="px-2 py-1 text-sm text-white border rounded-md border-fuchsia-600 bg-fuchsia-950 bg-opacity-60">
-                      LIVE BATCH
-                    </span>
-                    <span className="px-3 py-1 text-base text-white border border-solid rounded-md bg-fuchsia-950 bg-opacity-60 border-stone-900">
-                      HINDI
-                    </span>
-                  </div>
-                  <div className="flex justify-between gap-5 mt-auto">
-                    <div className="flex flex-col">
-                      <span className="text-base text-white">Limited Time Discount</span>
-                      <p className="mt-2 text-lg text-white">
-                        ₹{course.price} (+ GST) <span className="text-gray-400 line-through">₹{course.originalPrice}</span>
-                      </p>
+            <div key={index} className="flex flex-col h-full">
+              <article className="flex flex-col flex-grow border border-solid rounded-md border-fuchsia-700 bg-stone-950">
+                <div className="flex flex-col flex-grow p-5">
+                  <img src={course.image} alt={course.title} className="object-contain w-full h-48 rounded-md" />
+                  <div className="flex flex-col flex-grow w-full mt-5">
+                    <h3 className="text-xl text-white">{course.title}</h3>
+                    <div className="flex gap-4 mt-3.5">
+                      <span className="px-2 py-1 text-sm text-white border rounded-md border-fuchsia-600 bg-fuchsia-950 bg-opacity-60">
+                        LIVE BATCH
+                      </span>
+                      <span className="px-3 py-1 text-base text-white border border-solid rounded-md bg-fuchsia-950 bg-opacity-60 border-stone-900">
+                        HINDI
+                      </span>
                     </div>
-                    <span className="self-end text-base text-white">{course.discount} OFF</span>
+                    <div className="flex justify-between gap-5 mt-auto">
+                      <div className="flex flex-col">
+                        <span className="text-base text-white">Limited Time Discount</span>
+                        <p className="mt-2 text-lg text-white">
+                          ₹{course.price} (+ GST) <span className="text-gray-400 line-through">₹{course.originalPrice}</span>
+                        </p>
+                      </div>
+                      <span className="self-end text-base text-white">{course.discount} OFF</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </article>
               <ViewDetailsButton path={course.path} />
-            </article>
+            </div>
           ))}
         </div>
       </section>
