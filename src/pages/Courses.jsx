@@ -6,7 +6,7 @@ const ViewDetailsButton = ({ path }) => {
   return (
     <div className="p-5 flex justify-center">
       <button
-        className="w-72 px-8 py-3 text-2xl text-white transition-colors border rounded-md border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900"
+        className="w-80 px-8 py-2 text-2xl text-white transition-colors border rounded-md border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900"
         onClick={() => path && navigate(path)}
       >
         View Details

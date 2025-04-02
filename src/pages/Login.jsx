@@ -14,7 +14,7 @@ const Login = () => {
   return (
     <div className="min-h-screen text-white">
       {/* Navbar */}
-      <header className="flex justify-between items-center px-10 py-5 border-b border-solid bg-stone-950 border-b-fuchsia-900 shadow-[0_4px_4px_rgba(0,0,0,0.20)] max-sm:">
+      <header className="flex justify-between items-center px-10 py-5 border-b border-solid bg-stone-950 border-b-fuchsia-900 shadow-[0_4px_10px_rgba(0,0,0,0.20)] max-sm:">
         <h1 className="text-3xl font-bold">
           <span>Code</span>
           <span className="text-purple-900">Hub</span>

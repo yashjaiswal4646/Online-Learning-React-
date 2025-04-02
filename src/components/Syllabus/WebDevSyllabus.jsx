@@ -77,7 +77,7 @@ const WebDevSyllabus = () => {
         className="flex items-center justify-center min-h-screen px-6 text-white"
         style={{
           background:
-            "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+            "radial-gradient(circle at top center, #410640 5%, #000000 25%)",
         }}
       >
         <div className="flex flex-col items-center">
