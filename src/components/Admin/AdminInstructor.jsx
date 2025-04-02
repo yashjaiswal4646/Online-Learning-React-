@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AdminInstructor = () => {
+
+  const navigate = useNavigate();
+
+  
   const menuItems = [
-    { name: "Dashboard", path: "/" },
-    { name: "Course", path: "/courses" },
-    { name: "Student", path: "/students" },
-    { name: "Instructor", path: "/instructors" },
-    { name: "Setting", path: "/settings" },
+    { name: "Dashboard", path: "/admin/dashboard" },
+    { name: "Courses", path: "/admin/courses" },
+    { name: "Students", path: "/admin/students" },
+    { name: "Instructors", path: "/admin/instructors" },
   ];
 
   const instructors = [
@@ -98,7 +101,7 @@ const AdminInstructor = () => {
           </table>
 
           {/* Logout Button */}
-          <button className="absolute text-2xl border border-fuchsia-700 border-solid cursor-pointer bg-fuchsia-700 bg-opacity-30 bottom-[46px] h-[51px] right-[30px] rounded-[34px] w-[165px] max-sm:static max-sm:mt-10 max-sm:w-full hover:bg-opacity-50 transition-colors">
+          <button className="absolute text-2xl border border-fuchsia-700 border-solid cursor-pointer bg-fuchsia-700 bg-opacity-30 bottom-[46px] h-[51px] right-[30px] rounded-[34px] w-[165px] max-sm:static max-sm:mt-10 max-sm:w-full hover:bg-opacity-50 transition-colors" onClick={() => navigate("/admin/login")}>
             Logout
           </button>
         </div>

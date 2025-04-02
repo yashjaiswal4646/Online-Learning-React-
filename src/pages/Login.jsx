@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 const Login = () => {
 
@@ -10,7 +10,6 @@ const Login = () => {
     navigate("/");  
   };
 
-  const navItems = ["Home", "Course", "About", "Admin"];
 
   return (
     <div className="min-h-screen text-white">
@@ -22,19 +21,22 @@ const Login = () => {
         </h1>
 
         {/* Navigation */}
-        <nav className="flex items-center justify-center flex-1 gap-16 max-md:gap-5 max-sm:hidden">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-3xl transition-colors duration-300 cursor-pointer max-md:text-3xl hover:text-fuchsia-500"
-            >
-              {item}
-            </a>
-          ))}
+        <nav className="hidden space-x-10 text-lg lg:flex">
+          <Link to="/" className="text-white transition hover:text-fuchsia-500">
+            Home
+          </Link>
+          <Link to="/course" className="text-white transition hover:text-fuchsia-500">
+            Course
+          </Link>
+          <Link to="/about" className="text-white transition hover:text-fuchsia-500">
+            About
+          </Link>
+          <Link to="/admin/login" className="text-white transition hover:text-fuchsia-500">
+            Admin
+          </Link>
         </nav>
 
-        <Button className="px-3 py-1.5 text-xl bg-fuchsia-700 rounded-[32px] max-sm:px-2.5 max-sm:py-1 max-sm:text-base transition-colors duration-300 hover:bg-fuchsia-500">
+        <Button className="px-3 py-1.5 text-xl bg-fuchsia-700 rounded-[32px] max-sm:px-2.5 max-sm:py-1 max-sm:text-base transition-colors duration-300 hover:bg-fuchsia-500" onClick={() => navigate("/signup")}>
           SignUp
         </Button>
       </header>
