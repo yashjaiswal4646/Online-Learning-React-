@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Icons for hamburger menu
 import profileImg from "../path-to-your-image/image.png"; // Adjust the path accordingly
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
+  
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b shadow-lg bg-stone-950 border-fuchsia-900">
