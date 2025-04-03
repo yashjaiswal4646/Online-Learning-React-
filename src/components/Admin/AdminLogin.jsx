@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
+
 const Button = ({ children, className = "", ...props }) => {
     return (
       <button
@@ -21,34 +23,38 @@ const Input = ({ className = "", ...props }) => {
     );
   };
 
-const NavigationHeader = () => {
-
-    const navItems = ["Home", "Course", "About"];
-
-  return (
-    <header className="flex justify-between items-center px-10 py-5 border-b border-solid bg-stone-950 border-b-fuchsia-900 shadow-[0_4px_4px_rgba(0,0,0,0.25)] max-sm:p-4">
-    <h1 className="text-3xl font-bold">
-      <span>Code</span>
-      <span className="text-purple-900">Hub</span>
-    </h1>
-
-    {/* Navigation */}
-    <nav className="flex items-center justify-center flex-1 gap-16 max-md:gap-5 max-sm:hidden">
-      {navItems.map((item) => (
-        <a
-          key={item}
-          href={`#${item.toLowerCase()}`}
-          className="text-3xl transition-colors duration-300 cursor-pointer  max-md:text-3xl hover:text-fuchsia-500"
-        >
-          {item}
-        </a>
-      ))}
-    </nav>
-  </header>
-  );
-};
-
+  const NavigationHeader = () => {
+    
+    return (
+      <header className="fixed top-0 left-0 z-50 w-full border-b shadow-lg bg-stone-950 border-fuchsia-900">
+        <div className="container flex items-center justify-between px-6 py-4 mx-auto lg:px-12">
+          {/* Logo */}
+          <h1 className="text-3xl font-bold text-white">
+            <span>Code</span>
+            <span className="text-fuchsia-500 ">Hub</span>
+          </h1>
+  
+          {/* Centered Navigation */}
+          <nav className="flex justify-center flex-1 space-x-10 text-lg">
+            <Link to="/" className="text-white transition hover:text-fuchsia-500">
+              Home
+            </Link>
+            <Link to="/course" className="text-white transition hover:text-fuchsia-500">
+              Course
+            </Link>
+            <Link to="/about" className="text-white transition hover:text-fuchsia-500">
+              About
+            </Link>
+          </nav>
+        </div>
+      </header>
+    );
+  };
+  
 const LoginForm = () => {
+
+    const navigate = useNavigate();
+  
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +65,7 @@ const LoginForm = () => {
   return (
     <>
       {/* Main Content */}
-      <main className="flex justify-center pt-20">
+      <main className="flex justify-center pt-20 mt-12">
         <form onSubmit={handleSubmit} className="relative flex justify-center">
           {/* Background Blur Effect */}
           <div className="absolute bg-fuchsia-700 blur-[80px] h-[400px] top-[80px] w-[200px] z-[1]" />
@@ -83,7 +89,7 @@ const LoginForm = () => {
               type="submit"
               className="mx-auto mt-6 text-2xl rounded-full border border-fuchsia-700 
                         border-solid bg-stone-950 bg-opacity-90 h-[50px] w-[140px] 
-                        max-sm:text-xl max-sm:h-[40px] max-sm:w-[110px] hover:bg-fuchsia-900"
+                        max-sm:text-xl max-sm:h-[40px] max-sm:w-[110px] hover:bg-fuchsia-900" onClick={() => navigate("/admin/dashboard")}
             >
               Login
             </Button>

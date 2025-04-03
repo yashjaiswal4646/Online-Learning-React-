@@ -1,9 +1,9 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
   
   const [formData, setFormData] = useState({
     fullName: "",
@@ -23,6 +23,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
   };
 
   return (
@@ -33,12 +34,23 @@ const Signup = () => {
           <span>Code</span>
           <span className="text-purple-900">Hub</span>
         </h1>
-        <nav className="flex justify-center flex-1 gap-16 max-md:gap-8 max-sm:hidden">
-          <button className="text-4xl cursor-pointer max-md:text-3xl hover:text-fuchsia-500">Home</button>
-          <button className="text-4xl cursor-pointer max-md:text-3xl hover:text-fuchsia-500">Course</button>
-          <button className="text-4xl cursor-pointer max-md:text-3xl hover:text-fuchsia-500">About</button>
+        
+        <nav className="hidden space-x-10 text-lg lg:flex">
+          <Link to="/" className="text-white transition hover:text-fuchsia-500">
+            Home
+          </Link>
+          <Link to="/course" className="text-white transition hover:text-fuchsia-500">
+            Course
+          </Link>
+          <Link to="/about" className="text-white transition hover:text-fuchsia-500">
+            About
+          </Link>
+          <Link to="/admin/login" className="text-white transition hover:text-fuchsia-500">
+            Admin
+          </Link>
         </nav>
-        <button className="px-5 py-1.5 text-xl bg-fuchsia-700 cursor-pointer rounded-[32px] max-sm:px-4 max-sm:py-1 max-sm:text-base transition-colors duration-300 hover:bg-fuchsia-500">
+        
+        <button className="px-5 py-1.5 text-xl bg-fuchsia-700 cursor-pointer rounded-[32px] max-sm:px-4 max-sm:py-1 max-sm:text-base transition-colors duration-300 hover:bg-fuchsia-500" onClick={() => navigate("/login")}>
           Login
         </button>
       </header>
@@ -107,12 +119,11 @@ const Signup = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="mt-6 mb-0 text-xl rounded-full border border-fuchsia-700 border-solid cursor-pointer bg-stone-950 bg-opacity-90 h-[45px] w-[150px] max-sm:text-lg max-sm:h-[40px] max-sm:w-[130px] hover:bg-fuchsia-700"
+              className="mt-6 mb-0 text-xl rounded-full border border-fuchsia-700 border-solid cursor-pointer bg-stone-950 bg-opacity-90 h-[45px] w-[150px] max-sm:text-lg max-sm:h-[40px] max-sm:w-[130px] hover:bg-fuchsia-700" onClick={ ()=> {navigate('/login')}}
             >
               Sign Up
             </button>
           </div>
-
         </div>
       </form>
     </div>
