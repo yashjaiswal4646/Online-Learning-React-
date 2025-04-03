@@ -23,6 +23,11 @@ import AdminCourse from "../components/Admin/AdminCourse";
 import AdminStudent from "../components/Admin/AdminStudent";
 import AdminInstructor from "../components/Admin/AdminInstructor";
 import AdminLogin from "../components/Admin/AdminLogin";
+import FlutterPayment from "../components/Payment/FlutterPayment";
+import WebDevPayment from "../components/Payment/WebDevPayment";
+import WebDevlopmentPayment from "../components/Payment/WebDevlopmentPayment";
+import HackingPayment from "../components/Payment/HackingPayment";
+import NodejsPayment from "../components/Payment/NodejsPayment";
 
 function AppContent() {
   const location = useLocation();
@@ -72,6 +77,14 @@ function AppContent() {
         <Route path="/admin/courses" element={<AdminCourse />} />
         <Route path="/admin/students" element={<AdminStudent />} />
         <Route path="/admin/instructors" element={<AdminInstructor />} />
+
+        {/* All payment page */}
+        <Route path="/FlutterPayment" element={<FlutterPayment/>}/>
+        <Route path="/WebDevPayment" element={<WebDevPayment/>}/>
+        <Route path="/WebDevelopmentPayment" element={<WebDevlopmentPayment/>}/>
+        <Route path="/HackingPayment" element={<HackingPayment/>}/>
+        <Route path="/NodejsPayment" element={<NodejsPayment/>}/>
+
       </Routes>
 
      {/* Conditionally render Footer */}
