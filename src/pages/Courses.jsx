@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 const ViewDetailsButton = ({ path }) => {
   let navigate = useNavigate();
   return (
-    <div className="p-5 flex justify-center">
+    <div className="flex justify-center p-5">
       <button
-        className="w-80 px-8 py-2 text-2xl text-white transition-colors border rounded-md border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900"
+        className="px-8 py-2 text-2xl text-white transition-colors border rounded-md w-80 border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900"
         onClick={() => path && navigate(path)}
       >
         View Details
@@ -97,22 +97,21 @@ const Courses = () => {
                   <div className="flex flex-col flex-grow w-full mt-5">
                     <h3 className="text-xl text-white">{course.title}</h3>
                     <div className="flex gap-4 mt-3.5">
-                      <span className="px-2 py-1 text-sm text-white border rounded-md border-fuchsia-600 bg-fuchsia-950 bg-opacity-60">
-                        LIVE BATCH
-                      </span>
-                      <span className="px-3 py-1 text-base text-white border border-solid rounded-md bg-fuchsia-950 bg-opacity-60 border-stone-900">
-                        HINDI
-                      </span>
+                    <span className="px-3 py-1 ml-24 text-base text-center text-white border border-solid rounded-md bg-fuchsia-950 bg-opacity-60 border-stone-900">
+                      HINDI
+                    </span>
                     </div>
                     <div className="flex justify-between gap-5 mt-auto">
                       <div className="flex flex-col">
-                        <span className="text-base text-white">Limited Time Discount</span>
+                        <span className="mt-4 text-base text-white">Limited Time Discount</span>
                         <p className="mt-2 text-lg text-white">
                           ₹{course.price} (+ GST) <span className="text-gray-400 line-through">₹{course.originalPrice}</span>
                         </p>
                       </div>
-                      <span className="self-end text-base text-white">{course.discount} OFF</span>
-                    </div>
+                      <span className="self-end px-3 py-1 text-base text-white border border-solid rounded-md bg-fuchsia-950 bg-opacity-60 border-stone-900">
+                      {course.discount} OFF
+                    </span>
+                   </div>
                   </div>
                 </div>
               </article>

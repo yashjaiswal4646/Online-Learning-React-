@@ -95,7 +95,7 @@ const WebMaster = () => {
               GST)
             </h3>
             <p className="mt-2.5 text-xl">Limited Time Discount Applied!</p>
-            <button className="px-4 py-1.5 mt-5 text-4xl text-white rounded-2xl border border-fuchsia-500 border-solid bg-fuchsia-950 bg-opacity-80 hover:bg-opacity-100 transition-colors">
+            <button className="px-4 py-1.5 mt-5 text-4xl text-white rounded-2xl border border-fuchsia-500 border-solid bg-fuchsia-950 bg-opacity-80 hover:bg-opacity-100 transition-colors" onClick={() => navigate("/WebMasterPayment")}>
               Buy Now
             </button>
             <p className="mt-2.5 text-base">
