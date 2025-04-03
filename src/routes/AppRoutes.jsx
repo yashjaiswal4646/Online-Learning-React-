@@ -15,6 +15,7 @@ import HackingSyllabus from "../components/Syllabus/HackingSyllabus";
 import WebDevSyllabus from "../components/Syllabus/WebDevSyllabus";
 import WebMasterSyllabus from "../components/Syllabus/WebMasterSyllabus";
 import WebDevelopmentSyllabus from "../components/Syllabus/WebDevelopmentSyllabus";
+import NodejsSyllabus from "../components/Syllabus/NodejsSyllabus";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
@@ -70,6 +71,7 @@ function AppContent() {
         <Route path="/WebDevelopmentSyllabus" element={<WebDevelopmentSyllabus />} />
         <Route path="/WebMasterSyllabus" element={<WebMasterSyllabus />} />
         <Route path="/HackingSyllabus" element={<HackingSyllabus />} />
+        <Route path="/NodejsSyllabus" element={<NodejsSyllabus />} />
 
         {/* All Admin Pages */}
         <Route path="/admin/login" element={<AdminLogin/>} />
