@@ -57,7 +57,7 @@ const Signup = () => {
 
       {/* Signup Form */}
       <form onSubmit={handleSubmit} className="relative flex justify-center pt-12">
-        <div className="absolute bg-fuchsia-700 blur-[80px] h-[400px] top-[80px] w-[200px] z-[1]" />
+        <div className="absolute bg-fuchsia-700 blur-[50px] h-[500px] top-[70px] w-[200px] z-[1]" />
         <div className="relative px-0 py-14 border border-fuchsia-700 border-solid shadow-[0_4px_400px_#000] w-[500px] z-[2] max-sm:px-4 max-sm:py-6 max-sm:w-[85%] rounded-2xl">
           
           {/* Signup Title */}

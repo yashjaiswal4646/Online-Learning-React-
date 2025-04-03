@@ -45,7 +45,7 @@ const Login = () => {
       <main className="flex justify-center pt-20">
         <form onSubmit={handleSubmit} className="relative flex justify-center">
           {/* Background Blur Effect */}
-          <div className="absolute bg-fuchsia-700 blur-[80px] h-[400px] top-[80px] w-[200px] z-[1]" />
+          <div className="absolute bg-fuchsia-700 blur-[50px] h-[220px] top-[80px] w-[200px] z-[1]" />
 
           {/* Login Form Container */}
           <div
