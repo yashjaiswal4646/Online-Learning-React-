@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Navbar from "../components/Navbar";  // Default Navbar
+import Navbar from "../components/Navbar"; 
 import Footer from "../components/Footer";
 
 import {About, Home, Courses, Login, PrivacyPolicy, Signup, Profile} from "../pages/Index";
 import {AdminCourse, AdminDashboard, AdminInstructor, AdminLogin, AdminStudent} from '../components/Admin/Index'
 import {Flutter, WebDev, WebDevlopment, Hacking, Nodejs, WebMaster} from '../components/AllCourses/Index'
-import {FlutterPayment, WebDevPayment, WebDevlopmentPayment, HackingPayment, NodejsPayment} from '../components/Payment/Index'
+import {FlutterPayment, WebDevPayment, WebDevlopmentPayment, HackingPayment, NodejsPayment, WebMasterPayment} from '../components/Payment/Index'
 import {FlutterSyllabus, HackingSyllabus, WebDevSyllabus, WebDevelopmentSyllabus, WebMasterSyllabus} from '../components/Syllabus/Index'
 function AppContent() {
   const location = useLocation();
@@ -61,6 +61,8 @@ function AppContent() {
         <Route path="/WebDevelopmentPayment" element={<WebDevlopmentPayment/>}/>
         <Route path="/HackingPayment" element={<HackingPayment/>}/>
         <Route path="/NodejsPayment" element={<NodejsPayment/>}/>
+        <Route path="/WebMasterPayment" element={<WebMasterPayment/>}/>
+
 
       </Routes>
 

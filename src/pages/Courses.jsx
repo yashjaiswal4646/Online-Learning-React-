@@ -28,7 +28,7 @@ const Courses = () => {
     {
       image: "/images/Group34.png",
       title: "Online Ethical Hacking & Penetration Testing",
-      price: "7000",
+      price: "6999",
       originalPrice: "15000",
       discount: "50%",
       path: "/courses/hacking",
@@ -36,7 +36,7 @@ const Courses = () => {
     {
       image: "/images/Group35.png",
       title: "Online Flutter App Development Courses",
-      price: "7000",
+      price: "6999",
       originalPrice: "15000",
       discount: "50%",
       path: "/courses/flutter",
@@ -44,7 +44,7 @@ const Courses = () => {
     {
       image: "images/Group7.png",
       title: "Web Dev Cohort - Live 1.0",
-      price: "4000",
+      price: "5999",
       originalPrice: "8000",
       discount: "50%",
       path: "/courses/web-dev-cohort",
@@ -52,7 +52,7 @@ const Courses = () => {
     {
       image: "images/Group31.png",
       title: "Web Development Master Course",
-      price: "3000",
+      price: "5999",
       originalPrice: "6000",
       discount: "50%",
       path: "/courses/web-development-master",
@@ -60,7 +60,7 @@ const Courses = () => {
     {
       image: "images/Group32.png",
       title: "Complete Node.js + Express.js + MongoDB",
-      price: "6000",
+      price: "5999",
       originalPrice: "11999",
       discount: "50%",
       path: "/courses/nodejs",

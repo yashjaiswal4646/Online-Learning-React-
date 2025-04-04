@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // Icons for hamburger menu
 import profileImg from "../path-to-your-image/image.png"; // Adjust the path accordingly
 
-const Navbar = () => {
+const Navbar1 = () => {
   const [isOpen, setIsOpen] = useState(false);
   
 
@@ -66,4 +66,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar1;
