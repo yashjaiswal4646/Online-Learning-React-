@@ -17,12 +17,15 @@ const Nodejs = () => {
         }}
       >
       <section className="flex flex-col items-center">
-        <h2 className="flex flex-wrap justify-center gap-8 mt-20 text-white text-7xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
-          Complete <br />
-          <span className="text-[#A21FB6]">Node.js</span>+
-          <span className="text-[#A21FB6]"> Express.js </span>+
-          <span className="text-[#A21FB6]"> MongoDB</span>
-        </h2>
+      <h2 className="text-white text-7xl text-center mt-24">
+        Complete
+      </h2>
+      <h2 className="text-center text-6xl font-semibold">
+        <span className="text-[#A21FB6]">Node.js</span> + 
+        <span className="text-[#A21FB6]"> Express.js</span> + 
+        <span className="text-[#A21FB6]"> MongoDB</span>
+      </h2>
+
 
         <div className="flex flex-wrap gap-5 justify-between mt-36 w-full text-3xl text-black max-w-[1222px] max-md:mt-10 max-md:max-w-full">
           <button className="px-24 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
@@ -128,7 +131,7 @@ const Nodejs = () => {
           Dominate. From <span className="text-[#A60AA3]">Start</span> to
           Victory.
         </p>
-        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors">
+        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors" onClick={()=> {navigate('/NodejsSyllabus')}}>
           View Complete Syllabus
         </button>
       </section>
