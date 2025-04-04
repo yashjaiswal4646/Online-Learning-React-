@@ -8,52 +8,52 @@ export default function Home() {
 
   const courses = [
     {
-      image: "/images/Group30.png", // ✅ Corrected image path
+      image: "/images/Group30.png",
       title: "Job Ready AI Powered Cohort: Web + DSA + Aptitude",
       price: "5999",
       originalPrice: "11999",
       discount: "50%",
-      path:"/courses/web-development"
+      path: "/courses/web-development",
     },
     {
       image: "/images/Group34.png",
       title: "Online Ethical Hacking & Penetration Testing",
-      price: "7000",
+      price: "6999",
       originalPrice: "15000",
       discount: "50%",
-      path:"/courses/hacking"
+      path: "/courses/hacking",
     },
     {
       image: "/images/Group35.png",
       title: "Online Flutter App Development Courses",
-      price: "7000",
+      price: "6999",
       originalPrice: "15000",
       discount: "50%",
-      path:"/courses/flutter"
+      path: "/courses/flutter",
     },
     {
       image: "images/Group7.png",
       title: "Web Dev Cohort - Live 1.0",
-      price: "4000",
+      price: "5999",
       originalPrice: "8000",
       discount: "50%",
-      path:"/courses/web-dev-cohort"
+      path: "/courses/web-dev-cohort",
     },
     {
       image: "images/Group31.png",
       title: "Web Development Master Course",
-      price: "3000",
+      price: "5999",
       originalPrice: "6000",
       discount: "50%",
-      path:"/courses/web-development-master"
+      path: "/courses/web-development-master",
     },
     {
       image: "images/Group32.png",
       title: "Complete Node.js + Express.js + MongoDB",
-      price: "6000",
+      price: "5999",
       originalPrice: "11999",
       discount: "50%",
-      path:"/courses/nodejs"
+      path: "/courses/nodejs",
     },
   ];
   return (

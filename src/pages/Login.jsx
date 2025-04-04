@@ -66,7 +66,7 @@ const Login = () => {
               type="submit"
               className="mx-auto mt-6 text-2xl rounded-full border border-fuchsia-700 
                         border-solid bg-stone-950 bg-opacity-90 h-[50px] w-[140px] 
-                        max-sm:text-xl max-sm:h-[40px] max-sm:w-[110px] hover:bg-fuchsia-900"
+                        max-sm:text-xl max-sm:h-[40px] max-sm:w-[110px] hover:bg-fuchsia-900" onClick={() => navigate("/home2")}
             >
               Login
             </Button>
