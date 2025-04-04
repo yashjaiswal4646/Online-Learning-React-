@@ -1,0 +1,5 @@
+export {default as AdminCourse} from './AdminCourse' 
+export {default as AdminDashboard} from './AdminDashboard'
+export {default as AdminInstructor} from './AdminInstructor'
+export {default as AdminLogin} from './AdminLogin'
+export {default as AdminStudent} from './AdminStudent'

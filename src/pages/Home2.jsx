@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 
-export default function TextComponent() {
+export default function Home2() {
   let navigate = useNavigate();
 
 

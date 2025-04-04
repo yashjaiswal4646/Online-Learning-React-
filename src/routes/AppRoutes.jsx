@@ -1,34 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Home from "../pages/Home";
-import Courses from "../pages/Courses";
-import About from "../pages/About";
 import Navbar from "../components/Navbar";  // Default Navbar
 import Footer from "../components/Footer";
-import WebDevlopment from "../components/AllCourses/WebDevlopment";
-import Hacking from "../components/AllCourses/Hacking";
-import Flutter from "../components/AllCourses/Flutter";
-import Nodejs from "../components/AllCourses/Nodejs";
-import WebDev from "../components/AllCourses/WebDev";
-import WebMaster from "../components/AllCourses/WebMaster";
-import FlutterSyllabus from "../components/Syllabus/FlutterSyllabus";
-import HackingSyllabus from "../components/Syllabus/HackingSyllabus";
-import WebDevSyllabus from "../components/Syllabus/WebDevSyllabus";
-import WebMasterSyllabus from "../components/Syllabus/WebMasterSyllabus";
-import WebDevelopmentSyllabus from "../components/Syllabus/WebDevelopmentSyllabus";
-import Login from "../pages/Login";
-import Signup from "../pages/Signup";
-import PrivacyPolicy from "../pages/PrivacyPolicy";
-import AdminDashboard from "../components/Admin/AdminDashboard";
-import AdminCourse from "../components/Admin/AdminCourse";
-import AdminStudent from "../components/Admin/AdminStudent";
-import AdminInstructor from "../components/Admin/AdminInstructor";
-import AdminLogin from "../components/Admin/AdminLogin";
-import FlutterPayment from "../components/Payment/FlutterPayment";
-import WebDevPayment from "../components/Payment/WebDevPayment";
-import WebDevlopmentPayment from "../components/Payment/WebDevlopmentPayment";
-import HackingPayment from "../components/Payment/HackingPayment";
-import NodejsPayment from "../components/Payment/NodejsPayment";
 
+import {About, Home, Courses, Login, PrivacyPolicy, Signup, Profile} from "../pages/Index";
+import {AdminCourse, AdminDashboard, AdminInstructor, AdminLogin, AdminStudent} from '../components/Admin/Index'
+import {Flutter, WebDev, WebDevlopment, Hacking, Nodejs, WebMaster} from '../components/AllCourses/Index'
+import {FlutterPayment, WebDevPayment, WebDevlopmentPayment, HackingPayment, NodejsPayment} from '../components/Payment/Index'
+import {FlutterSyllabus, HackingSyllabus, WebDevSyllabus, WebDevelopmentSyllabus, WebMasterSyllabus} from '../components/Syllabus/Index'
 function AppContent() {
   const location = useLocation();
 
@@ -48,7 +26,6 @@ function AppContent() {
       {!showLoginNavbar && !showSignupNavbar && showNavbar && <Navbar />} 
       {showLoginNavbar && <Login />} 
       {showSignupNavbar && <Signup />}
-      {/* {showNavbar && <Navbar />}   */}
 
       <Routes>
         <Route path="/" element={<Home />} />

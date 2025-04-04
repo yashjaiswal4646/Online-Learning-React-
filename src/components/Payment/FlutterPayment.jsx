@@ -2,7 +2,7 @@ import React from "react";
 import imgflutter from "/images/Group35.png";
 import Tick from "/images/Tick.png";
 
-export default function WebDevlopmentPayment() {
+const FlutterPayment = ()=> {
   return (
     <main className="flex flex-col pb-32 overflow-hidden max-md:pb-20">
       <section className="self-center pt-6 pr-4 pb-16 pl-6 mt-28 w-full max-w-[1000px] bg-black rounded-xl border border-solid border-fuchsia-700 border-opacity-30 max-md:pl-4 max-md:mt-10 max-md:max-w-full">
@@ -133,3 +133,4 @@ export default function WebDevlopmentPayment() {
     </main>
   );
 }
+export default FlutterPayment;
