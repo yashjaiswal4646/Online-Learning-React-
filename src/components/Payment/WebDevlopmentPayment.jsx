@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // ✅ Added for navigation
 import Webdevelopment from "/images/Group30.png";
 import Tick from "/images/Tick.png";
 
 export default function WebDevlopmentPayment() {
+  const navigate = useNavigate(); // ✅ Hook to navigate programmatically
+
   return (
     <main className="flex flex-col pb-32 overflow-hidden max-md:pb-20">
       <section className="self-center pt-6 pr-4 pb-16 pl-6 mt-28 w-full max-w-[1000px] bg-black rounded-xl border border-solid border-fuchsia-700 border-opacity-30 max-md:pl-4 max-md:mt-10 max-md:max-w-full">
@@ -121,7 +124,10 @@ export default function WebDevlopmentPayment() {
                   <h3>Total Amount</h3>
                   <p>₹5999</p>
                 </div>
-                <button className="px-12 py-4 mt-4 text-lg rounded-lg bg-fuchsia-700 hover:bg-fuchsia-600">
+                <button
+                  onClick={() => navigate("/PayWeb")} // ✅ Navigation on click
+                  className="px-12 py-4 mt-4 text-lg rounded-lg bg-fuchsia-700 hover:bg-fuchsia-600"
+                >
                   Proceed to Checkout
                 </button>
               </aside>

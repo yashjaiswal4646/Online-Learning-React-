@@ -4,12 +4,10 @@ import roadmap from "/images/Group67.png";
 import { useNavigate } from "react-router-dom";
 
 const WebDevlopment = () => {
+  let navigate = useNavigate();
 
-     let navigate = useNavigate();
-  
   return (
     <>
-
       <div
         className="flex items-center justify-center min-h-screen px-6 text-white"
         style={{
@@ -17,42 +15,42 @@ const WebDevlopment = () => {
             "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
         }}
       >
-      <section className="flex flex-col items-center">
-        <h2 className="text-white mt-44 text-7xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
-          <span className="ml-20">
-            Job Ready <span className="text-[#A21FB6]"> AI </span> Powered
-            Cohort :{" "}
-          </span>
-          <br />
-          <span className="ml-96">Complete</span>
-          <br /> Web Development + DSA + Aptitude
-        </h2>
+        <section className="flex flex-col items-center">
+          <h2 className="text-white mt-44 text-7xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+            <span className="ml-20">
+              Job Ready <span className="text-[#A21FB6]"> AI </span> Powered
+              Cohort :{" "}
+            </span>
+            <br />
+            <span className="ml-96">Complete</span>
+            <br /> Web Development + DSA + Aptitude
+          </h2>
 
-        <div className="flex flex-wrap gap-5 justify-between mt-36 w-full text-3xl text-black max-w-[1222px] max-md:mt-10 max-md:max-w-full">
-          <button className="px-20 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-            MERN STACK
-          </button>
-          <div className="flex flex-wrap gap-10 max-md:max-w-full">
-            <button className="grow px-24 py-5 mr-32 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-              DSA With JS
+          <div className="flex flex-wrap gap-5 justify-between mt-36 w-full text-3xl text-black max-w-[1222px] max-md:mt-10 max-md:max-w-full">
+            <button className="px-20 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+              MERN STACK
             </button>
-            <button className="grow px-10 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-              AI Powered
-            </button>
+            <div className="flex flex-wrap gap-10 max-md:max-w-full">
+              <button className="grow px-24 py-5 mr-32 whitespace-nowrap border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+                DSA With JS
+              </button>
+              <button className="grow px-10 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+                AI Powered
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="flex flex-wrap gap-5 justify-between mt-20 w-full text-3xl text-black max-w-[1222px] max-md:mt-10 max-md:max-w-full">
-          <button className="px-14 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-            Placement Focus
-          </button>
-          <div className="flex flex-wrap gap-10 max-md:max-w-full">
-            <button className="grow px-14 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
-              Aptitude
+          <div className="flex flex-wrap gap-5 justify-between mt-20 w-full text-3xl text-black max-w-[1222px] max-md:mt-10 max-md:max-w-full">
+            <button className="px-14 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+              Placement Focus
             </button>
+            <div className="flex flex-wrap gap-10 max-md:max-w-full">
+              <button className="grow px-14 py-5 border-2 border-fuchsia-700 border-solid bg-stone-950 rounded-[50px] w-fit max-md:px-5 text-white hover:bg-fuchsia-900 transition-colors">
+                Aptitude
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
 
       <section className="mt-40 ml-20 w-full max-w-[1238px] max-md:mt-10 max-md:max-w-full">
@@ -97,9 +95,13 @@ const WebDevlopment = () => {
               GST)
             </h3>
             <p className="mt-2.5 text-xl">Limited Time Discount Applied!</p>
-            <button className="px-4 py-1.5 mt-5 text-4xl text-white rounded-2xl border border-fuchsia-500 border-solid bg-fuchsia-950 bg-opacity-80 hover:bg-opacity-100 transition-colors" onClick={() => navigate("/WebDevlopmentPayment")}>
+            <button
+              className="px-4 py-1.5 mt-5 text-4xl text-white rounded-2xl border border-fuchsia-500 border-solid bg-fuchsia-950 bg-opacity-80 hover:bg-opacity-100 transition-colors"
+              onClick={() => navigate("/WebDevelopmentPayment")}
+            >
               Buy Now
             </button>
+
             <p className="mt-2.5 text-base">
               Batch Starts on{" "}
               <span className="text-[#A60AA3]">27st May, 25</span>
@@ -132,7 +134,10 @@ const WebDevlopment = () => {
           Dominate. From <span className="text-[#A60AA3]">Start</span> to
           Victory.
         </p>
-        <button className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors" onClick={() => navigate("/WebDevelopmentSyllabus")}>
+        <button
+          className="px-10 py-7 mt-20 max-w-full text-2xl text-white border border-fuchsia-600 border-solid bg-fuchsia-900 bg-opacity-10 rounded-[101px] w-[365px] hover:bg-opacity-20 transition-colors"
+          onClick={() => navigate("/WebDevelopmentSyllabus")}
+        >
           View Complete Syllabus
         </button>
       </section>
