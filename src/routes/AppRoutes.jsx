@@ -8,6 +8,7 @@ import {Flutter, WebDev, WebDevlopment, Hacking, Nodejs, WebMaster} from '../com
 import {FlutterPayment, WebDevPayment, WebDevlopmentPayment, HackingPayment, NodejsPayment, WebMasterPayment} from '../components/Payment/Index'
 import {FlutterSyllabus, HackingSyllabus, WebDevSyllabus, WebDevelopmentSyllabus, WebMasterSyllabus} from '../components/Syllabus/Index'
 
+
 function AppContent() {
   const location = useLocation();
 
@@ -65,6 +66,7 @@ function AppContent() {
         <Route path="/HackingPayment" element={<HackingPayment/>}/>
         <Route path="/NodejsPayment" element={<NodejsPayment/>}/>
         <Route path="/WebMasterPayment" element={<WebMasterPayment/>}/>
+        {/* <Route path="/PayWeb" element={<PaymentPage />} /> */}
 
 
       </Routes>
