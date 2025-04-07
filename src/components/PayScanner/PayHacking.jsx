@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PayWebDevlopment() {
+export default function PayHacking() {
   return (
     <div className="flex items-center justify-center min-h-screen text-white bg-black">
       <div className="bg-gray-900 p-6 rounded-xl flex gap-10 w-[90%] max-w-5xl">

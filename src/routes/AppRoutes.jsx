@@ -7,6 +7,7 @@ import {AdminCourse, AdminDashboard, AdminInstructor, AdminLogin, AdminStudent} 
 import {Flutter, WebDev, WebDevlopment, Hacking, Nodejs, WebMaster} from '../components/AllCourses/Index'
 import {FlutterPayment, WebDevPayment, WebDevlopmentPayment, HackingPayment, NodejsPayment, WebMasterPayment} from '../components/Payment/Index'
 import {FlutterSyllabus, HackingSyllabus, WebDevSyllabus, WebDevelopmentSyllabus, WebMasterSyllabus} from '../components/Syllabus/Index'
+import {PayFlutter, PayHacking, PayNodejs, PayWebDev, PayWebDevlopment, PayWebMaster} from '../components/PayScanner/index'
 
 
 function AppContent() {
@@ -66,7 +67,15 @@ function AppContent() {
         <Route path="/HackingPayment" element={<HackingPayment/>}/>
         <Route path="/NodejsPayment" element={<NodejsPayment/>}/>
         <Route path="/WebMasterPayment" element={<WebMasterPayment/>}/>
-        {/* <Route path="/PayWeb" element={<PaymentPage />} /> */}
+
+        {/* All PayScanner page */}
+        <Route path="/PayFlutter" element={<PayFlutter/>} />
+        <Route path="/PayWebDev" element={<PayWebDev/>} />
+        <Route path="/PayWebDevelopment" element={<PayWebDevlopment/>} />
+        <Route path="/PayHacking" element={<PayHacking/>} />
+        <Route path="/PayNodejs" element={<PayNodejs/>} />
+        <Route path="/PayWebMaster" element={<PayWebMaster/>} />
+
 
 
       </Routes>

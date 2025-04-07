@@ -125,7 +125,7 @@ export default function WebDevlopmentPayment() {
                   <p>₹5999</p>
                 </div>
                 <button
-                  onClick={() => navigate("/PayWeb")} // ✅ Navigation on click
+                  onClick={() => navigate("/PayWebDevlopment")} // ✅ Navigation on click
                   className="px-12 py-4 mt-4 text-lg rounded-lg bg-fuchsia-700 hover:bg-fuchsia-600"
                 >
                   Proceed to Checkout
