@@ -1,6 +1,7 @@
 import React from "react";
 import profile from "/images/profile.png";
 import { useNavigate } from "react-router-dom";
+import Navbar1 from "../components/Navbar1";
 
 function Profile() {
 
@@ -14,12 +15,13 @@ function Profile() {
           "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
       }}
     >
+      <Navbar1/>
       <main className="w-full min-h-screen py-12">
         
         {/* Profile Section */}
         <section className="relative max-w-[500px] mx-auto bg-stone-900 p-10 rounded-lg shadow-md mt-12">
 
-          {/* Cross button */}
+          {/* Cross button
           <button
             className="absolute text-white transition bg-transparent rounded-full top-4 right-4 hover:text-red-500"
           >
@@ -27,7 +29,7 @@ function Profile() {
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
-          </button>
+          </button> */}
 
           {/* Profile Info */}
           <div className="flex items-center gap-8">
