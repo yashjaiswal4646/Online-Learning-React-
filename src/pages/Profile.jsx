@@ -1,7 +1,11 @@
 import React from "react";
 import profile from "/images/profile.png";
+import { useNavigate } from "react-router-dom";
 
 function Profile() {
+
+  const navigate = useNavigate();
+  
   return (
     <div
       className="flex items-center justify-center min-h-screen px-6 text-white"
@@ -75,7 +79,7 @@ function Profile() {
 
           {/* Logout Button */}
           <div className="mt-8 text-center">
-            <button className="px-10 py-3 text-white transition rounded-lg bg-fuchsia-700 hover:bg-fuchsia-600">
+            <button className="px-10 py-3 text-white transition rounded-lg bg-fuchsia-700 hover:bg-fuchsia-600" onClick={()=> {navigate("/")}}>
               Logout
             </button>
           </div>

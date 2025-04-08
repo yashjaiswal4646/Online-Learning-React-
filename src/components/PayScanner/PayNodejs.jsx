@@ -1,7 +1,10 @@
 import React from "react";
+import Navbar1 from "../Navbar1";
 
 export default function PayNodejs() { 
   return (
+    <>
+    <Navbar1/>
     <div className="flex items-center justify-center min-h-screen text-white bg-black">
       <div className="bg-gray-900 p-6 rounded-xl flex gap-10 w-[90%] max-w-5xl">
 
@@ -63,5 +66,6 @@ export default function PayNodejs() {
 
       </div>
     </div>
+    </>
   );
 } 

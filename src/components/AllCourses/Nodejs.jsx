@@ -2,6 +2,7 @@ import React from "react";
 import nodejs from "/images/Group32.png"
 import roadmap from "/images/Group67.png"
 import { useNavigate } from "react-router-dom";
+import Navbar1 from "../Navbar1";
 
 const Nodejs = () => {
 
@@ -16,11 +17,12 @@ const Nodejs = () => {
             "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
         }}
       >
+        <Navbar1/>
       <section className="flex flex-col items-center">
-      <h2 className="text-white text-7xl text-center mt-24">
+      <h2 className="mt-24 text-center text-white text-7xl">
         Complete
       </h2>
-      <h2 className="text-center text-6xl font-semibold">
+      <h2 className="text-6xl font-semibold text-center">
         <span className="text-[#A21FB6]">Node.js</span> + 
         <span className="text-[#A21FB6]"> Express.js</span> + 
         <span className="text-[#A21FB6]"> MongoDB</span>

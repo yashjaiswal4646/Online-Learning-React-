@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar1 from "../Navbar1";
 
 const WebDevSyllabus = () => {
     const sections = [
@@ -80,6 +81,7 @@ const WebDevSyllabus = () => {
             "radial-gradient(circle at top center, #410640 5%, #000000 25%)",
         }}
       >
+        <Navbar1/>
         <div className="flex flex-col items-center">
           <h2 className="text-white mt-44 text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           WEB DEV <span className="text-[#A21FB6]">COHORT</span>

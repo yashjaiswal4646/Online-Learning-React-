@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // Icons for hamburger menu
 import profileImg from "/images/profile.png";
+import {Link} from 'react-router-dom'
 
 const Navbar1 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,21 +18,21 @@ const Navbar1 = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden space-x-10 text-lg lg:flex">
-          <Link to="/" className="text-white transition hover:text-fuchsia-500">
+          <Link to="/home2" className="text-white transition hover:text-fuchsia-500">
             Home
           </Link>
-          <Link to="/course" className="text-white transition hover:text-fuchsia-500">
+          <Link to="/course2" className="text-white transition hover:text-fuchsia-500">
             Course
           </Link>
-          <Link to="/about" className="text-white transition hover:text-fuchsia-500">
+          <Link to="/about2" className="text-white transition hover:text-fuchsia-500">
             About
           </Link>
         </nav>
 
         {/* Profile Image */}
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="items-center hidden gap-6 lg:flex">
           <Link to="/profile">
-            <img src={profileImg} alt="Profile" className="w-10 h-10 rounded-full border border-white" />
+            <img src={profileImg} alt="Profile" className="w-10 h-10 border border-white rounded-full" />
           </Link>
         </div>
 
@@ -48,13 +49,13 @@ const Navbar1 = () => {
         }`}
       >
         <div className="flex flex-col items-center gap-6">
-          <Link to="/" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
+          <Link to="/home2" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link to="/course" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
+          <Link to="/course2" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
             Course
           </Link>
-          <Link to="/about" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
+          <Link to="/about2" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>
             About
           </Link>
           <Link to="/profile" className="text-white transition hover:text-fuchsia-500" onClick={() => setIsOpen(false)}>

@@ -2,6 +2,7 @@ import React from "react";
 import webdev from "/images/Group7.png";
 import roadmap from "/images/Group67.png";
 import { useNavigate } from "react-router-dom";
+import Navbar1 from "../Navbar1";
 
 const WebDev = () => {
 
@@ -17,6 +18,7 @@ const WebDev = () => {
             "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
         }}
       >
+        <Navbar1/>
       <section className="flex flex-col items-center">
         <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           WEB DEV <span className="text-[#A21FB6]">COHORT</span>

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Navbar from "../components/Navbar"; 
 import Footer from "../components/Footer";
 
-import {About, Home, Home2, Courses, Login, PrivacyPolicy, Signup, Profile} from "../pages/Index";
+import {About, About2, Home, Home2, Courses, Course2, Login, PrivacyPolicy, Signup, Profile} from "../pages/Index";
 import {AdminCourse, AdminDashboard, AdminInstructor, AdminLogin, AdminStudent} from '../components/Admin/Index'
 import {Flutter, WebDev, WebDevlopment, Hacking, Nodejs, WebMaster} from '../components/AllCourses/Index'
 import {FlutterPayment, WebDevPayment, WebDevlopmentPayment, HackingPayment, NodejsPayment, WebMasterPayment} from '../components/Payment/Index'
@@ -37,6 +37,8 @@ function AppContent() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/home2" element={<Home2/>} />
+        <Route path="/course2" element={<Course2/>} />
+        <Route path="/about2" element={<About2/>} />
 
         {/* All Courses */}
         <Route path="/courses/web-development" element={<WebDevlopment />} />

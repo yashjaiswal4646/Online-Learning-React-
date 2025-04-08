@@ -1,67 +1,129 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar1 from "../components/Navbar1";
 
-export default function PayWebDevlopment() {
+const ViewDetailsButton = ({ path }) => {
+  let navigate = useNavigate();
   return (
-    <div className="flex items-center justify-center min-h-screen text-white bg-black">
-      <div className="bg-gray-900 p-6 rounded-xl flex gap-10 w-[90%] max-w-5xl">
-
-        {/* Left Panel */}
-        <div className="flex flex-col gap-4">
-          <h1 className="text-3xl font-bold text-purple-500">Web Devlopment</h1>
-          <div className="px-6 py-4 text-center bg-gray-700 rounded-xl">
-            <h2 className="text-lg">Price Summary</h2>
-            <p className="text-2xl font-semibold">₹5999</p>
-          </div>
-          <div className="px-6 py-4 text-center bg-gray-700 rounded-xl">
-            <p>Using as +91 82526 41019</p>
-          </div>
-        </div>
-
-        {/* Right Panel */}
-        <div className="flex-1 p-6 bg-gray-800 rounded-xl">
-          <h2 className="mb-4 text-2xl font-semibold text-center">Payment Options</h2>
-
-          <div className="p-6 text-black bg-white rounded-xl">
-            <p className="mb-2 text-sm font-semibold">Available Offers</p>
-
-            <div className="flex items-center justify-between px-4 py-2 mb-4 bg-green-100 rounded-lg">
-              <div className="flex items-center gap-2">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png"
-                  alt="Cred" 
-                  className="w-5 h-5"
-                />
-                <span className="text-sm font-medium">
-                  UPTO ₹200 CRED cashback on CRED
-                </span>
-              </div>
-              <button className="text-sm font-medium text-green-700">View all</button>
-            </div>
-
-            <div className="flex items-center justify-between mb-2">
-              <p className="font-medium">UPI QR</p>
-              <span className="text-xs text-gray-500">⏱ 11:40</span>
-            </div>
-
-            <div className="flex flex-col items-center p-4 rounded-lg bg-green-50">
-              <img
-                src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay&size=100x100"
-                alt="QR Code"
-                className="mb-2 w-28 h-28"
-              />
-              <p className="mb-2 text-xs text-gray-500">Scan the QR using any UPI App</p>
-              <div className="flex gap-2 mb-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google_Pay_logo.svg" alt="GPay" className="h-6" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/PhonePe_Logo.png" alt="PhonePe" className="h-6" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Paytm_logo.png" alt="Paytm" className="h-6" />
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/BHIM_logo.svg/1024px-BHIM_logo.svg.png" alt="BHIM" className="h-6" />
-              </div>
-              <span className="px-3 py-1 text-sm text-green-800 bg-green-200 rounded-full">Upto ₹200 cashback</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <div className="flex justify-center p-5">
+      <button
+        className="px-8 py-2 text-2xl text-white transition-colors border rounded-md w-80 border-fuchsia-500 bg-fuchsia-950 hover:bg-fuchsia-900"
+        onClick={() => path && navigate(path)}
+      >
+        View Details
+      </button>
     </div>
   );
-} 
+};
+
+const Courses = () => {
+  const courses = [
+    {
+      image: "/images/Group30.png",
+      title: "Job Ready AI Powered Cohort: Web + DSA + Aptitude",
+      price: "5999",
+      originalPrice: "11999",
+      discount: "50%",
+      path: "/courses/web-development",
+    },
+    {
+      image: "/images/Group34.png",
+      title: "Online Ethical Hacking & Penetration Testing",
+      price: "6999",
+      originalPrice: "15000",
+      discount: "50%",
+      path: "/courses/hacking",
+    },
+    {
+      image: "/images/Group35.png",
+      title: "Online Flutter App Development Courses",
+      price: "6999",
+      originalPrice: "15000",
+      discount: "50%",
+      path: "/courses/flutter",
+    },
+    {
+      image: "images/Group7.png",
+      title: "Web Dev Cohort - Live 1.0",
+      price: "5999",
+      originalPrice: "8000",
+      discount: "50%",
+      path: "/courses/web-dev-cohort",
+    },
+    {
+      image: "images/Group31.png",
+      title: "Web Development Master Course",
+      price: "5999",
+      originalPrice: "6000",
+      discount: "50%",
+      path: "/courses/web-development-master",
+    },
+    {
+      image: "images/Group32.png",
+      title: "Complete Node.js + Express.js + MongoDB",
+      price: "5999",
+      originalPrice: "11999",
+      discount: "50%",
+      path: "/courses/nodejs",
+    },
+  ];
+
+  return (
+    <>
+      <div
+        className="flex items-center justify-center min-h-screen px-6 text-white"
+        style={{
+          background: "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
+        }}
+      >
+        <Navbar1/>
+        <section className="mb-32 text-center max-md:mt-10">
+          <h2 className="text-white text-8xl max-md:text-4xl">
+            We're not a <span className="text-[#A60AA3]">course</span> <br />
+            <span className="text-[#A60AA3]">factory.</span>
+          </h2>
+          <p className="mt-6 text-4xl text-white">
+            We focus on courses that really help.
+          </p>
+        </section>
+      </div>
+
+      <section className="flex flex-col items-center w-full px-6 max-md:px-5 max-md:mt-6">
+        <h2 className="self-start w-full text-4xl text-white">Courses That Work</h2>
+        <div className="grid w-full max-w-6xl grid-cols-1 gap-20 mt-6 sm:grid-cols-2 lg:grid-cols-3">
+          {courses.map((course, index) => (
+            <div key={index} className="flex flex-col h-full">
+              <article className="flex flex-col flex-grow border border-solid rounded-md border-fuchsia-700 bg-stone-950">
+                <div className="flex flex-col flex-grow p-5">
+                  <img src={course.image} alt={course.title} className="object-contain w-full h-48 rounded-md" />
+                  <div className="flex flex-col flex-grow w-full mt-5">
+                    <h3 className="text-xl text-white">{course.title}</h3>
+                    <div className="flex gap-4 mt-3.5">
+                    <span className="px-3 py-1 ml-24 text-base text-center text-white border border-solid rounded-md bg-fuchsia-950 bg-opacity-60 border-stone-900">
+                      HINDI
+                    </span>
+                    </div>
+                    <div className="flex justify-between gap-5 mt-auto">
+                      <div className="flex flex-col">
+                        <span className="mt-4 text-base text-white">Limited Time Discount</span>
+                        <p className="mt-2 text-lg text-white">
+                          ₹{course.price} (+ GST) <span className="text-gray-400 line-through">₹{course.originalPrice}</span>
+                        </p>
+                      </div>
+                      <span className="self-end px-3 py-1 text-base text-white border border-solid rounded-md bg-fuchsia-950 bg-opacity-60 border-stone-900">
+                      {course.discount} OFF
+                    </span>
+                   </div>
+                  </div>
+                </div>
+              </article>
+              <ViewDetailsButton path={course.path} />
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Courses;

@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar1 from "../Navbar1";
 
 const WebMasterSyllabus = () => {
   const sections = [
@@ -70,6 +71,7 @@ const WebMasterSyllabus = () => {
             "radial-gradient(circle at top center, #410640 5%, #000000 25%)",
         }}
       >
+        <Navbar1/>
     <div className="flex flex-col items-center">
       <h2 className="text-white mt-44 text-7xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         <span className="ml-8 text-8xl">

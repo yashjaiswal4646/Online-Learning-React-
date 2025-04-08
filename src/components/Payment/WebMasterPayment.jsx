@@ -2,12 +2,15 @@ import React from "react";
 import webmaster from "/images/Group31.png";
 import Tick from "/images/Tick.png";
 import { useNavigate } from "react-router-dom";
+import Navbar1 from "../Navbar1";
 
 export default function WebMasterPayment() {
 
   const navigate = useNavigate();
   
   return (
+    <>
+    <Navbar1/>
     <main className="flex flex-col pb-32 overflow-hidden max-md:pb-20">
       <section className="self-center pt-6 pr-4 pb-16 pl-6 mt-28 w-full max-w-[1000px] bg-black rounded-xl border border-solid border-fuchsia-700 border-opacity-30 max-md:pl-4 max-md:mt-10 max-md:max-w-full">
         
@@ -135,5 +138,6 @@ export default function WebMasterPayment() {
         </div>
       </section>
     </main>
+    </>
   );
 }

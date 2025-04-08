@@ -23,7 +23,7 @@ const Courses = () => {
       price: "5999",
       originalPrice: "11999",
       discount: "50%",
-      path: "/courses/web-development",
+      path: "/login",
     },
     {
       image: "/images/Group34.png",
@@ -31,7 +31,7 @@ const Courses = () => {
       price: "6999",
       originalPrice: "15000",
       discount: "50%",
-      path: "/courses/hacking",
+      path: "/login",
     },
     {
       image: "/images/Group35.png",
@@ -39,7 +39,7 @@ const Courses = () => {
       price: "6999",
       originalPrice: "15000",
       discount: "50%",
-      path: "/courses/flutter",
+      path: "/login",
     },
     {
       image: "images/Group7.png",
@@ -47,7 +47,7 @@ const Courses = () => {
       price: "5999",
       originalPrice: "8000",
       discount: "50%",
-      path: "/courses/web-dev-cohort",
+      path: "/login",
     },
     {
       image: "images/Group31.png",
@@ -55,7 +55,7 @@ const Courses = () => {
       price: "5999",
       originalPrice: "6000",
       discount: "50%",
-      path: "/courses/web-development-master",
+      path: "/login",
     },
     {
       image: "images/Group32.png",
@@ -63,10 +63,9 @@ const Courses = () => {
       price: "5999",
       originalPrice: "11999",
       discount: "50%",
-      path: "/courses/nodejs",
+      path: "/login",
     },
   ];
-
   return (
     <>
       <div

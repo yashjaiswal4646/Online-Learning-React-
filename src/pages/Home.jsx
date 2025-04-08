@@ -13,7 +13,7 @@ export default function Home() {
       price: "5999",
       originalPrice: "11999",
       discount: "50%",
-      path: "/courses/web-development",
+      path: "/login",
     },
     {
       image: "/images/Group34.png",
@@ -21,7 +21,7 @@ export default function Home() {
       price: "6999",
       originalPrice: "15000",
       discount: "50%",
-      path: "/courses/hacking",
+      path: "/login",
     },
     {
       image: "/images/Group35.png",
@@ -29,7 +29,7 @@ export default function Home() {
       price: "6999",
       originalPrice: "15000",
       discount: "50%",
-      path: "/courses/flutter",
+      path: "/login",
     },
     {
       image: "images/Group7.png",
@@ -37,7 +37,7 @@ export default function Home() {
       price: "5999",
       originalPrice: "8000",
       discount: "50%",
-      path: "/courses/web-dev-cohort",
+      path: "/login",
     },
     {
       image: "images/Group31.png",
@@ -45,7 +45,7 @@ export default function Home() {
       price: "5999",
       originalPrice: "6000",
       discount: "50%",
-      path: "/courses/web-development-master",
+      path: "/login",
     },
     {
       image: "images/Group32.png",
@@ -53,7 +53,7 @@ export default function Home() {
       price: "5999",
       originalPrice: "11999",
       discount: "50%",
-      path: "/courses/nodejs",
+      path: "/login",
     },
   ];
   return (
@@ -126,7 +126,7 @@ export default function Home() {
             DevOps with AWS (ECR, EC2, CloudFront), modern workflows like Turbo Repo,
             TypeScript, and GitHub CI/CD.
           </p>
-          <button className="px-5 py-2 text-xl font-semibold text-white transition rounded-full bg-fuchsia-900 hover:bg-fuchsia-500">
+          <button className="px-5 py-2 text-xl font-semibold text-white transition rounded-full bg-fuchsia-900 hover:bg-fuchsia-500" onClick={() => navigate("/login")}>
             Join now
           </button>
         </div>

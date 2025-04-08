@@ -2,6 +2,7 @@ import React from "react";
 import imghacking from "/images/Group34.png"
 import roadmap from "/images/Group107.png"
 import { useNavigate } from "react-router-dom";
+import Navbar1 from "../Navbar1";
 
 const Hacking = () => {
 
@@ -17,6 +18,7 @@ const Hacking = () => {
             "radial-gradient(circle at top center, #410640 5%, #000000 50%)",
         }}
       >
+        <Navbar1/>
       <section className="flex flex-col items-center">
         <h2 className="mt-20 text-white text-8xl max-md:mt-10 max-md:max-w-full max-md:text-4xl">
           Online Ethical <span className="text-[#A21FB6]">Hacking </span>{" "}
