@@ -12,6 +12,7 @@ app.use(express.json());
 // Import your route
 const userRouter = require('./routes/userRoutes');
 
+
 // Connect to DB
 dbconnection();
 
