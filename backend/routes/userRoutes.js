@@ -6,6 +6,7 @@ const userControler = require('../controller/userController');
 router.post('/register', userControler.createUser);
 router.get('/getAllUser', userControler.getUsers);
 
+
 // 👇 New update route
 router.put('/update/:id', userControler.updateUser);
 
