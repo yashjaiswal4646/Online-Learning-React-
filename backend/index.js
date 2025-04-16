@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Import your route
 const userRouter = require('./routes/userRoutes');
+const courseRoutes = require('./routes/courseRoute');
 
 
 // Connect to DB
@@ -23,6 +24,7 @@ app.get('/', (req, res) => {
 
 // Mount routes
 app.use("/users", userRouter);
+app.use("/course", courseRoutes);
 
 // Start server
 app.listen(port, () => {

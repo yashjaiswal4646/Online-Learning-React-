@@ -1,5 +1,9 @@
 const userModel = require('../models/userModel');
 
+
+const jwt = require('jsonwebtoken');
+const SECRET_KEY = "myapp@React"; // Ideally use process.env.SECRET_KEY
+
 const createUser = async (req, res) => {
   try {
     const { username, email, password, phone, gender } = req.body;
@@ -18,7 +22,20 @@ const createUser = async (req, res) => {
     });
 
     await newUser.save();
-    res.status(201).json({ message: 'User registered successfully', user: newUser });
+
+    // 🔐 Generate JWT token
+    const token = jwt.sign({ id: newUser._id }, SECRET_KEY, { expiresIn: '1d' });
+
+    // 🍪 Set token in HTTP-only cookie
+    res
+      .cookie('token', token, {
+        httpOnly: true,
+        secure: false, // set to true if using HTTPS
+        sameSite: 'Lax',
+        maxAge: 24 * 60 * 60 * 1000, // 1 day
+      })
+      .status(201)
+      .json({ message: 'User registered successfully', user: newUser });
   } catch (err) {
     console.error('Error in createUser:', err);
     res.status(500).json({ message: 'Internal server error', error: err.message });
@@ -115,6 +132,7 @@ const loginUser = async (req, res) => {
     res.status(500).json({ message: 'Internal server error' });
   }
 };
+
 
 
 module.exports = { createUser, getUsers, updateUser, deleteUser, getUserById, loginUser };
