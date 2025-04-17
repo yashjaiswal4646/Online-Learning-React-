@@ -30,7 +30,73 @@ const getInstructors = async (req, res) => {
     }
 };
 
+
+
+const deleteInstructor = async (req, res) => {
+    try {
+      const { id } = req.params;
+  
+      const deletedInstructor = await instructorModel.findByIdAndDelete(id);
+  
+      if (!deletedInstructor) {
+        return res.status(404).json({ message: 'Instructor not found' });
+      }
+  
+      res.status(200).json({ message: 'Instructor deleted successfully', deletedInstructor });
+    } catch (error) {
+      console.error('Error deleting instructor:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  };
+
+
+
+  const getInstructorById = async (req, res) => {
+    try {
+      const { id } = req.params;
+      const instructor = await instructorModel.findById(id);
+  
+      if (!instructor) {
+        return res.status(404).json({ message: 'Instructor not found' });
+      }
+  
+      res.status(200).json({ instructor });
+    } catch (error) {
+      console.error('Error fetching instructor:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  };
+
+
+
+
+  const updateInstructor = async (req, res) => {
+    try {
+      const { id } = req.params;
+      const { name } = req.body; // Only allow updating the name
+  
+      const updatedInstructor = await instructorModel.findByIdAndUpdate(
+        id,
+        { name }, // Only update the name field
+        { new: true } // Return the updated document
+      );
+  
+      if (!updatedInstructor) {
+        return res.status(404).json({ message: 'Instructor not found' });
+      }
+  
+      res.status(200).json({ message: 'Instructor updated successfully', updatedInstructor });
+    } catch (error) {
+      console.error('Error updating instructor:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  };
+  
+
 module.exports = {
     addInstructor,
     getInstructors,
+    deleteInstructor,
+    getInstructorById,
+    updateInstructor,
 };

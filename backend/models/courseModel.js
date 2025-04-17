@@ -14,8 +14,9 @@ const courseSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  instructorName: {
-    type: String,
+  instructor: {
+    type: mongoose.Schema.Types.ObjectId, // Reference to the Instructor model
+    ref: 'Instructor', // Name of the Instructor model
     required: true,
   },
 });

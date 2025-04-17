@@ -1,6 +1,6 @@
 const express = require('express');
 const instructorModel = require('../models/instructorModel'); // Import the instructor model
-const { addInstructor, getInstructors } = require('../controller/instructorController');
+const { addInstructor, getInstructors, getInstructorById, updateInstructor, deleteInstructor } = require('../controller/instructorController');
 const validateInstructor = require('../middleware/validateInstructor');
 
 const router = express.Router();
@@ -50,5 +50,11 @@ router.delete('/:id', async (req, res) => {
         res.status(500).json({ message: 'Internal server error' });
     }
 });
+
+// Fetch instructor by ID
+router.get('/:id', getInstructorById);
+
+// Update instructor by ID
+router.put('/:id', updateInstructor);
 
 module.exports = router;

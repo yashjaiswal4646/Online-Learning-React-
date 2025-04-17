@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 // Mount routes
 app.use("/users", userRouter);
-app.use("/course", courseRoutes);
+app.use("/courses", courseRoutes);
 app.use("/instructors", instructorRoutes); 
 
 
