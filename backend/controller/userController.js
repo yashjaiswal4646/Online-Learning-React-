@@ -55,7 +55,7 @@ const getUsers = async (req, res) => {
 const updateUser = async (req, res) => {
   try {
     const { id } = req.params;
-    const { username, email, phone, gender } = req.body;
+    const { username, email, phone, gender, password } = req.body;
 
     // Check if the email is already taken by another user (excluding the current user)
     const existingUserWithEmail = await userModel.findOne({ email });
@@ -63,12 +63,16 @@ const updateUser = async (req, res) => {
       return res.status(400).json({ message: 'Email is already in use by another user.' });
     }
 
+    // Prepare the updated data
+    const updatedData = { username, email, phone, gender };
+
+    // Include the password if provided
+    if (password) {
+      updatedData.password = password;
+    }
+
     // Proceed with updating the user
-    const user = await userModel.findByIdAndUpdate(
-      id,
-      { username, email, phone, gender },
-      { new: true }
-    );
+    const user = await userModel.findByIdAndUpdate(id, updatedData, { new: true });
 
     if (!user) {
       return res.status(404).json({ message: 'User not found' });
