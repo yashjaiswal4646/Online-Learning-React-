@@ -1,36 +1,44 @@
 const express = require('express');
+const path = require('path');
+const cors = require('cors');
 const app = express();
 const port = 3000;
-const cors = require('cors');
 
+// DB connection
 const dbconnection = require('./config/dbconnection');
-
-app.use(cors());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-// Import your route
-const userRouter = require('./routes/userRoutes');
-const courseRoutes = require('./routes/courseRoute');
-const instructorRoutes = require('./routes/instructorRoute'); // Import instructor routes
-
-
 
 // Connect to DB
 dbconnection();
 
-// Basic test route
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// Middleware
+app.use(cors({
+  origin: 'http://localhost:5173', // Update this to your frontend port
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Serve uploaded images statically
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Import routes
+const userRouter = require('./routes/userRoutes');
+const courseRoutes = require('./routes/courseRoute');
+const instructorRoutes = require('./routes/instructorRoute');
 
 // Mount routes
-app.use("/users", userRouter);
-app.use("/courses", courseRoutes);
-app.use("/instructors", instructorRoutes); 
+app.use('/users', userRouter);
+app.use('/courses', courseRoutes);
+app.use('/instructors', instructorRoutes);
 
+// Basic test route
+app.get('/', (req, res) => {
+  res.send('Hello from the API!');
+});
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+  console.log(`✅ Server running at http://localhost:${port}`);
 });
