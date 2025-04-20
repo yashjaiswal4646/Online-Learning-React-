@@ -138,5 +138,20 @@ const loginUser = async (req, res) => {
 };
 
 
+const logoutUser = (req, res) => {
+  try {
+    // Clear the token cookie
+    res.clearCookie('token', {
+      httpOnly: true,
+      secure: false, // Set to true if using HTTPS
+      sameSite: 'Lax',
+    });
+    res.status(200).json({ message: 'Logout successful' });
+  } catch (err) {
+    console.error('Logout error:', err);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+};
 
-module.exports = { createUser, getUsers, updateUser, deleteUser, getUserById, loginUser };
+
+module.exports = { createUser, getUsers, updateUser, deleteUser, getUserById, loginUser, logoutUser };
