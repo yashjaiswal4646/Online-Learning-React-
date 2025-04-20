@@ -4,6 +4,8 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
+
+
 // DB connection
 const dbconnection = require('./config/dbconnection');
 
@@ -27,11 +29,14 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 const userRouter = require('./routes/userRoutes');
 const courseRoutes = require('./routes/courseRoute');
 const instructorRoutes = require('./routes/instructorRoute');
+const adminRoutes = require('./routes/adminRoute');
+
 
 // Mount routes
 app.use('/users', userRouter);
 app.use('/courses', courseRoutes);
 app.use('/instructors', instructorRoutes);
+app.use('/admin', adminRoutes); 
 
 // Basic test route
 app.get('/', (req, res) => {
